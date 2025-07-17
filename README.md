@@ -12,6 +12,15 @@ A comprehensive, scalable web scraper built on crawl4ai that performs deep websi
 - Comprehensive logging and error handling
 - Configurable via YAML/JSON and environment variables
 
+## Documentation
+
+Comprehensive documentation is available in the `docs` directory:
+
+- [User Guide](docs/user_guide.md) - Complete guide to using the scraper
+- [API Integration](docs/api_integration.md) - Details on integrating with the RAG API
+- [Troubleshooting](docs/troubleshooting.md) - Solutions to common issues
+- [Example Configurations](docs/example_configs.md) - Configuration examples for different use cases
+
 ## Project Structure
 
 ```
@@ -22,8 +31,12 @@ project/
 │   ├── processors/     # Content processing components
 │   ├── storage/        # Storage management components
 │   └── utils/          # Utility functions
-├── docs/               # Development mode output
-│   ├── agriculture/
+├── docs/               # Documentation and development mode output
+│   ├── user_guide.md   # Comprehensive user guide
+│   ├── api_integration.md # API integration documentation
+│   ├── troubleshooting.md # Troubleshooting guide
+│   ├── example_configs.md # Example configurations
+│   ├── agriculture/    # Development mode output directories
 │   ├── water/
 │   ├── weather/
 │   ├── crops/
@@ -45,7 +58,7 @@ project/
    pip install -r requirements.txt
    ```
 
-## Usage
+## Quick Start
 
 ### Development Mode
 
@@ -56,7 +69,10 @@ python -m scraper --mode=dev --urls https://example.com
 ### Production Mode
 
 ```
-export RAG_API_KEY=your_api_key
+set RAG_API_KEY=your_api_key  # Windows
+# OR
+export RAG_API_KEY=your_api_key  # macOS/Linux
+
 python -m scraper --mode=prod --urls https://example.com
 ```
 
@@ -64,6 +80,12 @@ python -m scraper --mode=prod --urls https://example.com
 
 ```
 python -m scraper --url-file urls.txt
+```
+
+### Using Default Agricultural URLs
+
+```
+python -m scraper --use-default-urls
 ```
 
 ## Configuration
@@ -110,12 +132,18 @@ logging:
   backup_count: 5
 ```
 
+See [Example Configurations](docs/example_configs.md) for more configuration examples.
+
 ## Environment Variables
 
 - `SCRAPER_MODE`: Set to "dev" or "prod" to override configuration
 - `RAG_API_KEY`: API key for production mode
 - `SCRAPER_MAX_WORKERS`: Maximum number of concurrent workers
 - `LOG_LEVEL`: Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+
+## Command Line Options
+
+Run `python -m scraper --help` to see all available command line options.
 
 ## License
 

@@ -1,13 +1,13 @@
 scraper:
   mode: "dev"  # dev or prod
-  max_workers: 10
+  max_workers: 30
   max_depth: 3
   rate_limit: 0.01  # seconds between requests per domain
   timeout: 30
   
 crawl4ai:
   headless: true
-  wait_for_images: true
+  wait_for_images: false
   scan_full_page: true
   scroll_delay: 0.5
   accept_downloads: true
