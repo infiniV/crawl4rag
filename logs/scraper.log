@@ -144,3 +144,449 @@ ValueError: Crawl engine not initialized
 2025-07-17 04:34:55 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
 2025-07-17 04:35:47 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
 2025-07-17 04:35:47 - scraper - WARNING - content:validate_content_quality:288 - Content quality too low: 0.00
+2025-07-17 20:52:51 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 20:52:51 - scraper - INFO - __main__:main:60 - Running in DEV mode
+2025-07-17 20:52:51 - scraper - INFO - __main__:main:77 - Processing 16 URLs
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_urls:97 - Processing 16 URLs in dev mode
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://pac.com.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ztbl.com.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ztbl.com.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ffc.com.pk/kashtkar-desk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ffc.com.pk/kashtkar-desk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://aari.punjab.gov.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://aari.punjab.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://plantprotection.gov.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://plantprotection.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://web.uaf.edu.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://web.uaf.edu.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://namc.pmd.gov.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://namc.pmd.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.parc.gov.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.parc.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: http://www.amis.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL http://www.amis.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://agripunjab.gov.pk/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://agripunjab.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.fao.org/home/en: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pcrwr.gov.pk
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pcrwr.gov.pk: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://nwfc.pmd.gov.pk/new/daily-forecast.php
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://nwfc.pmd.gov.pk/new/daily-forecast.php: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pmd.gov.pk/en/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pmd.gov.pk/en/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.iwmi.org/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.iwmi.org/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.cgiar.org/
+2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.cgiar.org/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 20:52:51 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 20:52:51 - scraper - INFO - __main__:main:114 - Processing completed: 0/16 URLs successful
+2025-07-17 20:53:19 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 20:53:19 - scraper - INFO - __main__:main:60 - Running in DEV mode
+2025-07-17 20:53:19 - scraper - INFO - __main__:main:77 - Processing 16 URLs
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_urls:97 - Processing 16 URLs in dev mode
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://pac.com.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ztbl.com.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ztbl.com.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ffc.com.pk/kashtkar-desk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ffc.com.pk/kashtkar-desk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://aari.punjab.gov.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://aari.punjab.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://plantprotection.gov.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://plantprotection.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://web.uaf.edu.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://web.uaf.edu.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://namc.pmd.gov.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://namc.pmd.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.parc.gov.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.parc.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: http://www.amis.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL http://www.amis.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://agripunjab.gov.pk/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://agripunjab.gov.pk/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.fao.org/home/en: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pcrwr.gov.pk
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pcrwr.gov.pk: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://nwfc.pmd.gov.pk/new/daily-forecast.php
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://nwfc.pmd.gov.pk/new/daily-forecast.php: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pmd.gov.pk/en/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pmd.gov.pk/en/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.iwmi.org/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.iwmi.org/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.cgiar.org/
+2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.cgiar.org/: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 20:53:19 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 20:53:19 - scraper - INFO - __main__:main:114 - Processing completed: 0/16 URLs successful
+2025-07-17 20:54:53 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 20:54:53 - scraper - INFO - __main__:main:60 - Running in DEV mode
+2025-07-17 20:54:53 - scraper - INFO - __main__:main:77 - Processing 1 URLs
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com
+2025-07-17 20:54:53 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.example.com: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 20:54:53 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 20:54:53 - scraper - INFO - __main__:main:114 - Processing completed: 0/1 URLs successful
+2025-07-17 21:03:02 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:03:02 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:03:02 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:03:02 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:03:02 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:03:02 - scraper.core.crawl_engine - ERROR - crawl_engine:initialize:140 - Failed to initialize crawl engine: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-07-17 21:03:02 - scraper - ERROR - __main__:main:121 - Scraper execution failed: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 131, in initialize
+    await self.crawler.astart()
+          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AsyncWebCrawler' object has no attribute 'astart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
+    await orchestrator.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
+    await component.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 141, in initialize
+    raise CrawlingError(f"Initialization failed: {e}")
+scraper.core.base.CrawlingError: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-07-17 21:09:03 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:09:03 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:09:03 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:09:03 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:09:03 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:09:03 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:09:03 - scraper.core.crawl_engine - ERROR - crawl_engine:initialize:140 - Failed to initialize crawl engine: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-07-17 21:09:03 - scraper - ERROR - __main__:main:121 - Scraper execution failed: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 131, in initialize
+    await self.crawler.astart()
+          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AsyncWebCrawler' object has no attribute 'astart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
+    await orchestrator.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
+    await component.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 141, in initialize
+    raise CrawlingError(f"Initialization failed: {e}")
+scraper.core.base.CrawlingError: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-07-17 21:11:00 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:11:00 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:11:00 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:11:00 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:11:00 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:11:00 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:11:00 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 21:11:00 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 21:11:00 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 21:11:00 - scraper - ERROR - __main__:main:121 - Scraper execution failed: 'ContentClassifier' object has no attribute 'initialize'
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
+    await orchestrator.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
+    await component.initialize()
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContentClassifier' object has no attribute 'initialize'
+2025-07-17 21:12:04 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:12:04 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:12:04 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:12:04 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:12:04 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:12:04 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:12:04 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 21:12:04 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 21:12:04 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 21:12:04 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 21:12:04 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 21:12:04 - scraper - INFO - rag_uploader:initialize:88 - Initializing RAG API uploader
+2025-07-17 21:12:04 - scraper - ERROR - __main__:main:121 - Scraper execution failed: API key not found in environment variable: RAG_API_KEY
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
+    await orchestrator.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
+    await component.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\storage\rag_uploader.py", line 93, in initialize
+    raise APIError(f"API key not found in environment variable: {self.api_key_env}")
+scraper.core.base.APIError: API key not found in environment variable: RAG_API_KEY
+2025-07-17 21:12:35 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:12:35 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:12:35 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:12:35 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:12:35 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:12:35 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:12:35 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 21:12:35 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 21:12:35 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 21:12:35 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 21:12:35 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 21:12:35 - scraper - ERROR - __main__:main:121 - Scraper execution failed: 'LoggingManager' object has no attribute 'initialize'
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
+    await orchestrator.initialize()
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
+    await component.initialize()
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LoggingManager' object has no attribute 'initialize'
+2025-07-17 21:13:33 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:13:33 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:13:33 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:13:33 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:13:33 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:13:33 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:13:33 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 21:13:33 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 21:13:33 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 21:13:33 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 21:13:33 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 21:13:33 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 21:13:33 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 21:13:33 - scraper - INFO - component_factory:start_monitoring:114 - Starting to process 1 URLs
+2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com/
+2025-07-17 21:13:41 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.example.com/
+2025-07-17 21:13:41 - scraper - INFO - media:extract_media_urls:126 - Extracted 0 media items from https://www.example.com/
+2025-07-17 21:13:42 - scraper.processors.classifier - INFO - classifier:classify_content:216 - No domain met confidence threshold, using default: agriculture
+2025-07-17 21:13:42 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_211342.md
+2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to agriculture domain with ID: document_20250717_211342
+2025-07-17 21:13:42 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:13:42 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_example_com__media_20250717_211342.md
+2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to agriculture domain with ID: https___www_example_com__media_20250717_211342
+2025-07-17 21:13:42 - scraper - INFO - component_factory:update_progress:119 - Progress: 1/1 (100.0%) - Processed https://www.example.com/ - Success
+2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 1
+- Completed: 1 (100.0%)
+- Errors: 0
+- Elapsed Time: 9.03 seconds
+- Processing Rate: 0.11 URLs/second
+2025-07-17 21:13:42 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 21:13:42 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 21:13:42 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:157 - Crawl engine cleaned up successfully
+2025-07-17 21:13:42 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 21:13:42 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 21:13:42 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 21:13:42 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 21:13:42 - scraper - INFO - __main__:main:117 - Processing completed: 1/1 URLs successful
+2025-07-17 21:14:01 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 21:14:01 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 21:14:01 - scraper - INFO - __main__:main:78 - Processing 1 URLs
+2025-07-17 21:14:01 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 21:14:01 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 21:14:01 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 21:14:01 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 21:14:01 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 21:14:01 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 21:14:01 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 21:14:01 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 21:14:01 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 21:14:01 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 21:14:01 - scraper - INFO - component_factory:start_monitoring:114 - Starting to process 1 URLs
+2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
+2025-07-17 21:14:17 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.fao.org/home/en
+2025-07-17 21:14:17 - scraper - INFO - media:extract_media_urls:126 - Extracted 129 media items from https://www.fao.org/home/en
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\marketplace\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to marketplace domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\marketplace\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to marketplace domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\water\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to water domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\water\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to water domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to agriculture domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to agriculture domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\crops\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to crops domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\crops\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to crops domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\weather\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to weather domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\weather\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to weather domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\farm\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to farm domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\farm\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to farm domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\banking\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to banking domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\banking\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to banking domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\chat\document_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to chat domain with ID: document_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\chat\https___www_fao_org_home_en_media_20250717_211418.md
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to chat domain with ID: https___www_fao_org_home_en_media_20250717_211418
+2025-07-17 21:14:18 - scraper - INFO - component_factory:update_progress:119 - Progress: 1/1 (100.0%) - Processed https://www.fao.org/home/en - Success
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 1
+- Completed: 1 (100.0%)
+- Errors: 0
+- Elapsed Time: 17.34 seconds
+- Processing Rate: 0.06 URLs/second
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 21:14:18 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 21:14:18 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:157 - Crawl engine cleaned up successfully
+2025-07-17 21:14:18 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 21:14:18 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 21:14:18 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 21:14:18 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 21:14:18 - scraper - INFO - __main__:main:117 - Processing completed: 1/1 URLs successful

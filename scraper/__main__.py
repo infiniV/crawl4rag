@@ -20,6 +20,7 @@ from scraper.core.logging import setup_logging, get_logger
 from scraper.core.base import ProcessingMode
 from scraper.cli.arguments import CLIManager
 from scraper.core.orchestrator import ScraperOrchestratorImpl
+from scraper.utils.component_factory import create_and_register_components
 
 
 async def main() -> int:
@@ -105,6 +106,8 @@ async def main() -> int:
     # Initialize and run the scraper
     try:
         orchestrator = ScraperOrchestratorImpl(config)
+        # Create and register components
+        create_and_register_components(orchestrator, config)
         await orchestrator.initialize()
         results = await orchestrator.process_urls(urls, mode)
         await orchestrator.cleanup()

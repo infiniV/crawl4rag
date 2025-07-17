@@ -128,7 +128,7 @@ class CrawlEngine(CrawlEngineInterface):
             
             # Initialize the crawler
             self.crawler = AsyncWebCrawler(config=self.browser_config)
-            await self.crawler.astart()
+            # No need to call astart() - we'll use the crawler directly
             
             # Set up concurrency control
             self.semaphore = asyncio.Semaphore(self.max_concurrent)
@@ -144,7 +144,11 @@ class CrawlEngine(CrawlEngineInterface):
         """Clean up crawler resources"""
         try:
             if self.crawler:
-                await self.crawler.aclose()
+                # Check if the crawler has a close method
+                if hasattr(self.crawler, 'aclose'):
+                    await self.crawler.aclose()
+                elif hasattr(self.crawler, 'close'):
+                    await self.crawler.close()
                 self.crawler = None
             
             # Clear sessions
@@ -186,6 +190,7 @@ class CrawlEngine(CrawlEngineInterface):
             
             # Perform the crawl
             async with self.semaphore:
+                # Use the crawler directly with the run config
                 result = await self.crawler.arun(url=url, config=run_config)
             
             # Convert crawl4ai result to our format
