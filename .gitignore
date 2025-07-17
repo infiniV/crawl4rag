@@ -1,6 +1,29 @@
-.venv   
-.kiro
+# Virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Kiro IDE files
+.kiro/
+
+# Environment variables
 .env
-docs
-files
-logs
+
+# Generated content
+docs/agriculture/
+docs/water/
+docs/weather/
+docs/crops/
+docs/farm/
+docs/marketplace/
+docs/banking/
+docs/chat/
+files/
+logs/
+
+# Keep documentation files
+!docs/user_guide.md
+!docs/api_integration.md
+!docs/troubleshooting.md
+!docs/example_configs.md
