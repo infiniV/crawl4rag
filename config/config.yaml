@@ -1,0 +1,38 @@
+scraper:
+  mode: "dev"  # dev or prod
+  max_workers: 10
+  max_depth: 3
+  rate_limit: 1.0  # seconds between requests per domain
+  timeout: 30
+  
+crawl4ai:
+  headless: true
+  wait_for_images: true
+  scan_full_page: true
+  scroll_delay: 0.5
+  accept_downloads: true
+  timeout: 30
+  
+storage:
+  dev:
+    base_path: "./docs"
+    files_path: "./files"
+  prod:
+    rag_api_url: "http://217.154.66.145:8000"
+    api_key_env: "RAG_API_KEY"
+    
+domains:
+  agriculture: ["farm", "crop", "soil", "organic", "agriculture"]
+  water: ["irrigation", "water", "drainage", "hydro"]
+  weather: ["weather", "climate", "forecast", "meteorology"]
+  crops: ["crop", "plant", "disease", "pest", "harvest"]
+  farm: ["equipment", "machinery", "operation", "management"]
+  marketplace: ["market", "price", "commodity", "trade"]
+  banking: ["loan", "insurance", "finance", "credit"]
+  chat: ["conversation", "chat", "dialogue", "interaction"]
+
+logging:
+  level: "INFO"
+  file: "./logs/scraper.log"
+  max_size: "100MB"
+  backup_count: 5

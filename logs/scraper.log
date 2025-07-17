@@ -1,0 +1,146 @@
+2025-07-17 01:03:00 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:03:00 - scraper - INFO - __main__:main:54 - Running in DEV mode
+2025-07-17 01:03:00 - scraper - INFO - __main__:main:71 - Processing 1 URLs
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://example.com
+2025-07-17 01:03:00 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://example.com: Crawl engine not initialized
+Traceback (most recent call last):
+  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
+    raise ValueError("Crawl engine not initialized")
+ValueError: Crawl engine not initialized
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 01:03:00 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 01:03:00 - scraper - INFO - __main__:main:108 - Processing completed: 0/1 URLs successful
+2025-07-17 01:18:30 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:18:30 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:18:30 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:18:31 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
+2025-07-17 01:18:31 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
+2025-07-17 01:18:31 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:18:31 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:39 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
+2025-07-17 01:28:39 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
+2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:28:42 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
+2025-07-17 01:28:42 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:28:42 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:27 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:27 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:27 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:27 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
+2025-07-17 01:46:27 - scraper - WARNING - url:_normalize_url:307 - Invalid URL format: not a url
+2025-07-17 01:46:27 - scraper - WARNING - url:validate_urls:102 - Failed to normalize URL: not a url
+2025-07-17 01:46:27 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
+2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:46:31 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
+2025-07-17 01:46:31 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:46:31 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:18 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
+2025-07-17 01:48:18 - scraper - WARNING - url:_normalize_url:307 - Invalid URL format: not a url
+2025-07-17 01:48:18 - scraper - WARNING - url:validate_urls:102 - Failed to normalize URL: not a url
+2025-07-17 01:48:18 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
+2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:19 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:19 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 01:48:19 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 01:48:19 - scraper - INFO - url:initialize:64 - Initializing URL manager
+2025-07-17 01:48:19 - scraper - INFO - url:initialize:72 - URL manager initialized
+2025-07-17 01:48:21 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
+2025-07-17 01:48:21 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
+2025-07-17 01:48:21 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
+2025-07-17 03:27:06 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 03:28:38 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 03:31:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 03:33:37 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:30:25 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:30:47 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:31:52 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:32:59 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:32:59 - scraper - WARNING - content:validate_content_quality:288 - Content quality too low: 0.30
+2025-07-17 04:34:55 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:35:47 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 04:35:47 - scraper - WARNING - content:validate_content_quality:288 - Content quality too low: 0.00
