@@ -1,592 +1,565 @@
-2025-07-17 01:03:00 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:03:00 - scraper - INFO - __main__:main:54 - Running in DEV mode
-2025-07-17 01:03:00 - scraper - INFO - __main__:main:71 - Processing 1 URLs
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://example.com
-2025-07-17 01:03:00 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://example.com: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 01:03:00 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 01:03:00 - scraper - INFO - __main__:main:108 - Processing completed: 0/1 URLs successful
-2025-07-17 01:18:30 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:18:30 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:18:30 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:18:31 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
-2025-07-17 01:18:31 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
-2025-07-17 01:18:31 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:18:31 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:39 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
-2025-07-17 01:28:39 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
-2025-07-17 01:28:39 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:28:39 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:28:39 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:28:42 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
-2025-07-17 01:28:42 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:28:42 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:27 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:27 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:27 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:27 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
-2025-07-17 01:46:27 - scraper - WARNING - url:_normalize_url:307 - Invalid URL format: not a url
-2025-07-17 01:46:27 - scraper - WARNING - url:validate_urls:102 - Failed to normalize URL: not a url
-2025-07-17 01:46:27 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
-2025-07-17 01:46:28 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:46:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:46:28 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:46:31 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
-2025-07-17 01:46:31 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:46:31 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:18 - scraper - WARNING - url:validate_urls:96 - Invalid URL: 
-2025-07-17 01:48:18 - scraper - WARNING - url:_normalize_url:307 - Invalid URL format: not a url
-2025-07-17 01:48:18 - scraper - WARNING - url:validate_urls:102 - Failed to normalize URL: not a url
-2025-07-17 01:48:18 - scraper - INFO - url:validate_urls:112 - URL excluded by pattern: https://excluded.com
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 3 discovered URLs at depth 1
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 1
-2025-07-17 01:48:18 - scraper - INFO - url:add_discovered_urls:205 - Added 2 discovered URLs at depth 2
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:18 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:19 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:19 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 01:48:19 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 01:48:19 - scraper - INFO - url:initialize:64 - Initializing URL manager
-2025-07-17 01:48:19 - scraper - INFO - url:initialize:72 - URL manager initialized
-2025-07-17 01:48:21 - scraper - WARNING - url:check_url_accessibility:160 - URL not accessible: https://www.example.com/nonexistent (Status: 404)
-2025-07-17 01:48:21 - scraper - INFO - url:cleanup:76 - Cleaning up URL manager
-2025-07-17 01:48:21 - scraper - INFO - url:cleanup:79 - URL manager cleanup completed
-2025-07-17 03:27:06 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 03:28:38 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 03:31:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 03:33:37 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:30:25 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:30:47 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:31:52 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:32:59 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:32:59 - scraper - WARNING - content:validate_content_quality:288 - Content quality too low: 0.30
-2025-07-17 04:34:55 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:35:47 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 04:35:47 - scraper - WARNING - content:validate_content_quality:288 - Content quality too low: 0.00
-2025-07-17 20:52:51 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 20:52:51 - scraper - INFO - __main__:main:60 - Running in DEV mode
-2025-07-17 20:52:51 - scraper - INFO - __main__:main:77 - Processing 16 URLs
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_urls:97 - Processing 16 URLs in dev mode
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://pac.com.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ztbl.com.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ztbl.com.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ffc.com.pk/kashtkar-desk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ffc.com.pk/kashtkar-desk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://aari.punjab.gov.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://aari.punjab.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://plantprotection.gov.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://plantprotection.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://web.uaf.edu.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://web.uaf.edu.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://namc.pmd.gov.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://namc.pmd.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.parc.gov.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.parc.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: http://www.amis.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL http://www.amis.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://agripunjab.gov.pk/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://agripunjab.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.fao.org/home/en: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pcrwr.gov.pk
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pcrwr.gov.pk: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://nwfc.pmd.gov.pk/new/daily-forecast.php
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://nwfc.pmd.gov.pk/new/daily-forecast.php: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pmd.gov.pk/en/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pmd.gov.pk/en/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.iwmi.org/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.iwmi.org/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.cgiar.org/
-2025-07-17 20:52:51 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.cgiar.org/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 20:52:51 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 20:52:51 - scraper - INFO - __main__:main:114 - Processing completed: 0/16 URLs successful
-2025-07-17 20:53:19 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 20:53:19 - scraper - INFO - __main__:main:60 - Running in DEV mode
-2025-07-17 20:53:19 - scraper - INFO - __main__:main:77 - Processing 16 URLs
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_urls:97 - Processing 16 URLs in dev mode
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://pac.com.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ztbl.com.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ztbl.com.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ffc.com.pk/kashtkar-desk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://ffc.com.pk/kashtkar-desk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://aari.punjab.gov.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://aari.punjab.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://plantprotection.gov.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://plantprotection.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://web.uaf.edu.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://web.uaf.edu.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://namc.pmd.gov.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://namc.pmd.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.parc.gov.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.parc.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: http://www.amis.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL http://www.amis.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://agripunjab.gov.pk/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://agripunjab.gov.pk/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.fao.org/home/en: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pcrwr.gov.pk
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pcrwr.gov.pk: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://nwfc.pmd.gov.pk/new/daily-forecast.php
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://nwfc.pmd.gov.pk/new/daily-forecast.php: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pmd.gov.pk/en/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.pmd.gov.pk/en/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.iwmi.org/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.iwmi.org/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.cgiar.org/
-2025-07-17 20:53:19 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.cgiar.org/: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 20:53:19 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 20:53:19 - scraper - INFO - __main__:main:114 - Processing completed: 0/16 URLs successful
-2025-07-17 20:54:53 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 20:54:53 - scraper - INFO - __main__:main:60 - Running in DEV mode
-2025-07-17 20:54:53 - scraper - INFO - __main__:main:77 - Processing 1 URLs
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com
-2025-07-17 20:54:53 - scraper - ERROR - orchestrator:process_single_url:227 - Error processing URL https://www.example.com: Crawl engine not initialized
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 162, in process_single_url
-    raise ValueError("Crawl engine not initialized")
-ValueError: Crawl engine not initialized
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 20:54:53 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 20:54:53 - scraper - INFO - __main__:main:114 - Processing completed: 0/1 URLs successful
-2025-07-17 21:03:02 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:03:02 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:03:02 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:03:02 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:03:02 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:03:02 - scraper.core.crawl_engine - ERROR - crawl_engine:initialize:140 - Failed to initialize crawl engine: 'AsyncWebCrawler' object has no attribute 'astart'
-2025-07-17 21:03:02 - scraper - ERROR - __main__:main:121 - Scraper execution failed: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 131, in initialize
-    await self.crawler.astart()
-          ^^^^^^^^^^^^^^^^^^^
-AttributeError: 'AsyncWebCrawler' object has no attribute 'astart'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
-    await orchestrator.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
-    await component.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 141, in initialize
-    raise CrawlingError(f"Initialization failed: {e}")
-scraper.core.base.CrawlingError: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
-2025-07-17 21:09:03 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:09:03 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:09:03 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:09:03 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:09:03 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:09:03 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:09:03 - scraper.core.crawl_engine - ERROR - crawl_engine:initialize:140 - Failed to initialize crawl engine: 'AsyncWebCrawler' object has no attribute 'astart'
-2025-07-17 21:09:03 - scraper - ERROR - __main__:main:121 - Scraper execution failed: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 131, in initialize
-    await self.crawler.astart()
-          ^^^^^^^^^^^^^^^^^^^
-AttributeError: 'AsyncWebCrawler' object has no attribute 'astart'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
-    await orchestrator.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
-    await component.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\crawl_engine.py", line 141, in initialize
-    raise CrawlingError(f"Initialization failed: {e}")
-scraper.core.base.CrawlingError: Initialization failed: 'AsyncWebCrawler' object has no attribute 'astart'
-2025-07-17 21:11:00 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:11:00 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:11:00 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:11:00 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:11:00 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:11:00 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:11:00 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
-2025-07-17 21:11:00 - scraper - INFO - content:initialize:64 - Initializing content processor
-2025-07-17 21:11:00 - scraper - INFO - media:initialize:59 - Initializing media extractor
-2025-07-17 21:11:00 - scraper - ERROR - __main__:main:121 - Scraper execution failed: 'ContentClassifier' object has no attribute 'initialize'
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
-    await orchestrator.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
-    await component.initialize()
-          ^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'ContentClassifier' object has no attribute 'initialize'
-2025-07-17 21:12:04 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:12:04 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:12:04 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:12:04 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:12:04 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:12:04 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:12:04 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
-2025-07-17 21:12:04 - scraper - INFO - content:initialize:64 - Initializing content processor
-2025-07-17 21:12:04 - scraper - INFO - media:initialize:59 - Initializing media extractor
-2025-07-17 21:12:04 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
-2025-07-17 21:12:04 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
-2025-07-17 21:12:04 - scraper - INFO - rag_uploader:initialize:88 - Initializing RAG API uploader
-2025-07-17 21:12:04 - scraper - ERROR - __main__:main:121 - Scraper execution failed: API key not found in environment variable: RAG_API_KEY
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
-    await orchestrator.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
-    await component.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\storage\rag_uploader.py", line 93, in initialize
-    raise APIError(f"API key not found in environment variable: {self.api_key_env}")
-scraper.core.base.APIError: API key not found in environment variable: RAG_API_KEY
-2025-07-17 21:12:35 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:12:35 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:12:35 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:12:35 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:12:35 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:12:35 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:12:35 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
-2025-07-17 21:12:35 - scraper - INFO - content:initialize:64 - Initializing content processor
-2025-07-17 21:12:35 - scraper - INFO - media:initialize:59 - Initializing media extractor
-2025-07-17 21:12:35 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
-2025-07-17 21:12:35 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
-2025-07-17 21:12:35 - scraper - ERROR - __main__:main:121 - Scraper execution failed: 'LoggingManager' object has no attribute 'initialize'
-Traceback (most recent call last):
-  File "D:\farmovation-github\farmovation-scrappy\scraper\__main__.py", line 111, in main
-    await orchestrator.initialize()
-  File "D:\farmovation-github\farmovation-scrappy\scraper\core\orchestrator.py", line 56, in initialize
-    await component.initialize()
-          ^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'LoggingManager' object has no attribute 'initialize'
-2025-07-17 21:13:33 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:13:33 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:13:33 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:13:33 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:13:33 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:13:33 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:13:33 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
-2025-07-17 21:13:33 - scraper - INFO - content:initialize:64 - Initializing content processor
-2025-07-17 21:13:33 - scraper - INFO - media:initialize:59 - Initializing media extractor
-2025-07-17 21:13:33 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
-2025-07-17 21:13:33 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
-2025-07-17 21:13:33 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
-2025-07-17 21:13:33 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
-2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
-2025-07-17 21:13:33 - scraper - INFO - component_factory:start_monitoring:114 - Starting to process 1 URLs
-2025-07-17 21:13:33 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com/
-2025-07-17 21:13:41 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.example.com/
-2025-07-17 21:13:41 - scraper - INFO - media:extract_media_urls:126 - Extracted 0 media items from https://www.example.com/
-2025-07-17 21:13:42 - scraper.processors.classifier - INFO - classifier:classify_content:216 - No domain met confidence threshold, using default: agriculture
-2025-07-17 21:13:42 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_211342.md
-2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to agriculture domain with ID: document_20250717_211342
-2025-07-17 21:13:42 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:13:42 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_example_com__media_20250717_211342.md
-2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to agriculture domain with ID: https___www_example_com__media_20250717_211342
-2025-07-17 21:13:42 - scraper - INFO - component_factory:update_progress:119 - Progress: 1/1 (100.0%) - Processed https://www.example.com/ - Success
-2025-07-17 21:13:42 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+2025-07-17 22:44:16 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 22:44:16 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 22:44:16 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 22:44:16 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 22:44:16 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 22:44:16 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
+2025-07-17 22:44:16 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
+2025-07-17 22:44:16 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 22:44:16 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 22:44:16 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 22:44:16 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 22:44:16 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 22:44:16 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 22:44:16 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 22:44:16 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 22:44:16 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 1 URLs
+2025-07-17 22:44:17 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com/
+2025-07-17 22:44:22 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.example.com/
+2025-07-17 22:44:22 - scraper - INFO - media:extract_media_urls:126 - Extracted 0 media items from https://www.example.com/
+2025-07-17 22:44:22 - scraper.processors.classifier - INFO - classifier:classify_content:216 - No domain met confidence threshold, using default: agriculture
+2025-07-17 22:44:22 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_224422.md
+2025-07-17 22:44:22 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to agriculture domain with ID: document_20250717_224422
+2025-07-17 22:44:22 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 22:44:22 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_example_com__media_20250717_224422.md
+2025-07-17 22:44:22 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to agriculture domain with ID: https___www_example_com__media_20250717_224422
+2025-07-17 22:44:22 - scraper - INFO - component_factory:update_progress:123 - Progress: 1/1 (100.0%) - Processed https://www.example.com/ - Success
+2025-07-17 22:44:22 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
 Processing Report:
 - Total URLs: 1
 - Completed: 1 (100.0%)
 - Errors: 0
-- Elapsed Time: 9.03 seconds
-- Processing Rate: 0.11 URLs/second
-2025-07-17 21:13:42 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 21:13:42 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
-2025-07-17 21:13:42 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:157 - Crawl engine cleaned up successfully
-2025-07-17 21:13:42 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
-2025-07-17 21:13:42 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
-2025-07-17 21:13:42 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
-2025-07-17 21:13:42 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 21:13:42 - scraper - INFO - __main__:main:117 - Processing completed: 1/1 URLs successful
-2025-07-17 21:14:01 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
-2025-07-17 21:14:01 - scraper - INFO - __main__:main:61 - Running in DEV mode
-2025-07-17 21:14:01 - scraper - INFO - __main__:main:78 - Processing 1 URLs
-2025-07-17 21:14:01 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
-2025-07-17 21:14:01 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
-2025-07-17 21:14:01 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:81 - Initializing crawl4ai engine...
-2025-07-17 21:14:01 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:137 - Crawl engine initialized with max_concurrent=10
-2025-07-17 21:14:01 - scraper - INFO - content:initialize:64 - Initializing content processor
-2025-07-17 21:14:01 - scraper - INFO - media:initialize:59 - Initializing media extractor
-2025-07-17 21:14:01 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
-2025-07-17 21:14:01 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
-2025-07-17 21:14:01 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
-2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
-2025-07-17 21:14:01 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
-2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
-2025-07-17 21:14:01 - scraper - INFO - component_factory:start_monitoring:114 - Starting to process 1 URLs
-2025-07-17 21:14:01 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
-2025-07-17 21:14:17 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.fao.org/home/en
-2025-07-17 21:14:17 - scraper - INFO - media:extract_media_urls:126 - Extracted 129 media items from https://www.fao.org/home/en
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\marketplace\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to marketplace domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\marketplace\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to marketplace domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\water\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to water domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\water\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to water domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to agriculture domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to agriculture domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\crops\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to crops domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\crops\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to crops domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\weather\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to weather domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\weather\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to weather domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\farm\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to farm domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\farm\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to farm domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\banking\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to banking domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\banking\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to banking domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\chat\document_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:204 - Saved document to chat domain with ID: document_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\chat\https___www_fao_org_home_en_media_20250717_211418.md
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_single_url:212 - Saved media catalog to chat domain with ID: https___www_fao_org_home_en_media_20250717_211418
-2025-07-17 21:14:18 - scraper - INFO - component_factory:update_progress:119 - Progress: 1/1 (100.0%) - Processed https://www.fao.org/home/en - Success
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+- Elapsed Time: 5.92 seconds
+- Processing Rate: 0.17 URLs/second
+2025-07-17 22:44:22 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 22:44:22 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 22:44:23 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:157 - Crawl engine cleaned up successfully
+2025-07-17 22:44:23 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 22:44:23 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 22:44:23 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 22:44:23 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 22:44:23 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 22:56:32 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 22:56:32 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 22:56:32 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 22:56:32 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 22:56:32 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 22:56:32 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 22:56:32 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 22:56:32 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 22:56:32 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 22:56:32 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 22:56:32 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 22:56:32 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 1 URLs
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.example.com/
+2025-07-17 22:56:32 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.example.com/
+2025-07-17 22:56:32 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.example.com/ with max depth 3
+2025-07-17 22:56:32 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:56:38 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://www.example.com/ at depth 0
+2025-07-17 22:56:38 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 1 pages crawled
+2025-07-17 22:56:38 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://www.example.com/
+2025-07-17 22:56:38 - scraper - INFO - media:extract_media_urls:126 - Extracted 0 media items from https://www.example.com/
+2025-07-17 22:56:38 - scraper.processors.classifier - INFO - classifier:classify_content:216 - No domain met confidence threshold, using default: agriculture
+2025-07-17 22:56:38 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_225638.md
+2025-07-17 22:56:38 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to agriculture domain with ID: document_20250717_225638
+2025-07-17 22:56:38 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 22:56:38 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___www_example_com__media_20250717_225638.md
+2025-07-17 22:56:38 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to agriculture domain with ID: https___www_example_com__media_20250717_225638
+2025-07-17 22:56:38 - scraper - INFO - component_factory:update_progress:123 - Progress: 1/1 (100.0%) - Processed https://www.example.com/ - Success
+2025-07-17 22:56:38 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
 Processing Report:
 - Total URLs: 1
 - Completed: 1 (100.0%)
 - Errors: 0
-- Elapsed Time: 17.34 seconds
-- Processing Rate: 0.06 URLs/second
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
-2025-07-17 21:14:18 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
-2025-07-17 21:14:18 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:157 - Crawl engine cleaned up successfully
-2025-07-17 21:14:18 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
-2025-07-17 21:14:18 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
-2025-07-17 21:14:18 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
-2025-07-17 21:14:18 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
-2025-07-17 21:14:18 - scraper - INFO - __main__:main:117 - Processing completed: 1/1 URLs successful
+- Elapsed Time: 6.01 seconds
+- Processing Rate: 0.17 URLs/second
+2025-07-17 22:56:38 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 22:56:38 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 22:56:38 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 22:56:38 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 22:56:38 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 22:56:38 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 22:56:38 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 22:56:38 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 22:57:02 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 22:57:02 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 22:57:02 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 22:57:02 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 22:57:02 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 22:57:02 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 22:57:02 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 22:57:02 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 22:57:02 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 22:57:02 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 22:57:02 - scraper.core.url_manager - WARNING - url_manager:validate_urls:180 - URL validation failed: default-urls
+2025-07-17 22:57:02 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 0 out of 1 URLs
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:process_urls:102 - Validated 0/1 URLs
+2025-07-17 22:57:02 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 0 URLs
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 0
+- Completed: 0 (0.0%)
+- Errors: 0
+- Elapsed Time: 0.00 seconds
+- Processing Rate: 0.00 URLs/second
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 22:57:02 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 22:57:02 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 22:57:02 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 22:57:02 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 22:57:02 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 22:57:02 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 22:57:02 - scraper - INFO - __main__:main:125 - Processing completed: 0/0 URLs successful
+2025-07-17 22:57:18 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 22:57:18 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 22:57:18 - scraper - INFO - __main__:main:86 - Processing 16 URLs
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 22:57:18 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 22:57:18 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 22:57:18 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 22:57:18 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 22:57:18 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 22:57:18 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 22:57:18 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:process_urls:97 - Processing 16 URLs in dev mode
+2025-07-17 22:57:18 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 16 out of 16 URLs
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:process_urls:102 - Validated 16/16 URLs
+2025-07-17 22:57:18 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 16 URLs
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 22:57:18 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 22:57:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 22:57:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:57:50 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 22:58:00 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 22:58:01 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 22:58:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 22:58:04 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 22:58:04 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 22:58:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 22:58:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 22:58:14 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://pac.com.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 1/16 (6.2%) - Processed https://pac.com.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ztbl.com.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://ztbl.com.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://ztbl.com.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://ztbl.com.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 2/16 (12.5%) - Processed https://ztbl.com.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://ffc.com.pk/kashtkar-desk
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://ffc.com.pk/kashtkar-desk
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://ffc.com.pk/kashtkar-desk with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://ffc.com.pk/kashtkar-desk: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 3/16 (18.8%) - Processed https://ffc.com.pk/kashtkar-desk - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://aari.punjab.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://aari.punjab.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://aari.punjab.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://aari.punjab.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 4/16 (25.0%) - Processed https://aari.punjab.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://plantprotection.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://plantprotection.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://plantprotection.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://plantprotection.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 5/16 (31.2%) - Processed https://plantprotection.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://web.uaf.edu.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://web.uaf.edu.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://web.uaf.edu.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://web.uaf.edu.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 6/16 (37.5%) - Processed https://web.uaf.edu.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://namc.pmd.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://namc.pmd.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://namc.pmd.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://namc.pmd.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 7/16 (43.8%) - Processed https://namc.pmd.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.parc.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.parc.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.parc.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.parc.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 8/16 (50.0%) - Processed https://www.parc.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: http://www.amis.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for http://www.amis.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for http://www.amis.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl http://www.amis.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 9/16 (56.2%) - Processed http://www.amis.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://agripunjab.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://agripunjab.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://agripunjab.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://agripunjab.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 10/16 (62.5%) - Processed https://agripunjab.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.fao.org/home/en
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.fao.org/home/en
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.fao.org/home/en with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.fao.org/home/en: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 11/16 (68.8%) - Processed https://www.fao.org/home/en - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pcrwr.gov.pk/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.pcrwr.gov.pk/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.pcrwr.gov.pk/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.pcrwr.gov.pk/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 12/16 (75.0%) - Processed https://www.pcrwr.gov.pk/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://nwfc.pmd.gov.pk/new/daily-forecast.php
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://nwfc.pmd.gov.pk/new/daily-forecast.php
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://nwfc.pmd.gov.pk/new/daily-forecast.php with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://nwfc.pmd.gov.pk/new/daily-forecast.php: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 13/16 (81.2%) - Processed https://nwfc.pmd.gov.pk/new/daily-forecast.php - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.pmd.gov.pk/en
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.pmd.gov.pk/en
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.pmd.gov.pk/en with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.pmd.gov.pk/en: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 14/16 (87.5%) - Processed https://www.pmd.gov.pk/en - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.iwmi.org/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.iwmi.org/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.iwmi.org/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.iwmi.org/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 15/16 (93.8%) - Processed https://www.iwmi.org/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://www.cgiar.org/
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://www.cgiar.org/
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://www.cgiar.org/ with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:deep_crawl_url:598 - Failed to deep crawl https://www.cgiar.org/: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - component_factory:update_progress:123 - Progress: 16/16 (100.0%) - Processed https://www.cgiar.org/ - Failed
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 16
+- Completed: 16 (100.0%)
+- Errors: 0
+- Elapsed Time: 57.20 seconds
+- Processing Rate: 0.28 URLs/second
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 22:58:15 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 22:58:15 - scraper.core.crawl_engine - ERROR - crawl_engine:cleanup:165 - Error during cleanup: Browser.close: Connection closed while reading from the driver
+2025-07-17 22:58:15 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 22:58:15 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 22:58:15 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 22:58:15 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 22:58:15 - scraper - INFO - __main__:main:125 - Processing completed: 0/16 URLs successful
+2025-07-17 22:58:45 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 22:58:45 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 22:58:45 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 22:58:45 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 22:58:45 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 22:58:45 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 22:58:45 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 22:58:45 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 22:58:45 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 22:58:45 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 22:58:45 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 22:58:45 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 1 URLs
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 22:58:45 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 22:58:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 22:58:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 22:58:57 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 22:59:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 22:59:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 22:59:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 22:59:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 22:59:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 22:59:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 22:59:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 22:59:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 22:59:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 22:59:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 22:59:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 22:59:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-5.-Mitigating-Animal-Disease-to-Support-Growth.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/04/20240423-PAC-Call-to-Action.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/20240624-PAC-Introduction-CIRC.pdf.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-4.-Financing-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/The-State-of-Pakistans-Agriculture-2024.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-2.-Water-for-Equitable-Growth.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2023/10/The-State-of-Pakistans-Agriculture.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-1.-Higher-Growth-Through-Technology.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-3.-The-Seed-of-Growth.pdf at depth 2
+2025-07-17 22:59:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 22:59:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ac2025registration at depth 2
+2025-07-17 22:59:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled http://www.pac.com.pk at depth 2
+2025-07-17 22:59:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/farm-mechanization at depth 2
+2025-07-17 22:59:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/sustainable-and-traceable-cotton-cultivation at depth 2
+2025-07-17 22:59:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/organized-financial-inclusion-for-farmers-crop-insurance-2 at depth 2
+2025-07-17 22:59:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/our-team at depth 2
+2025-07-17 22:59:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/formation-of-the-collateral-management-company-on-warehouse-receipts-based-financing-2 at depth 2
+2025-07-17 22:59:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=3 at depth 2
+2025-07-17 22:59:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=2 at depth 2
+2025-07-17 22:59:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=6 at depth 2
+2025-07-17 22:59:30 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-6.-Better-Feed-for-Higher-Livestock-Growth.pdf at depth 2
+2025-07-17 22:59:32 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-9.-Protecting-the-livelihoods-of-Pakistans-farmers-TPL-Insurance-and-Crop-Insurance.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-5.-Bringing-the-corportae-sector-to-serve-the-farmer-HBL-Zarai.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-7.-Open-sesame-How-CMEC-is-expanding-Pakistans-sesame-exports-to-China.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-4.-How-KN_s-built-the-poultry-value-chain.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-6.-Developing-Pakistan_s-blue-agri-economy-AquaHatch-International-and-Dhabeji-Aqua-Foods.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-1.-Seed-to-table-National-Foods-and-tomatoes.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-8.-Empowering-women-to-increase-dairy-productivity-FrieslandCampina-Engro.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-3.-Re-defining-end-to-end-integration-PepsiCo-Lays-and-potatoes.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-Policy-Priorities-for-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/USAID-Private-Silo-Warehousing-for-Pakistans-Grains.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/The-State-of-Pakistans-Agriculture-2024-1.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-10.-Regenerative-agriculture-to-protect-Pakistans-soils-its-water-and-its-bio-diversity-Thal-Industries-and-its-Drawdown-Farm.pdf at depth 2
+2025-07-17 22:59:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-2.-Producing-more-with-less-Fatima-Group-in-wheat-and-cotton.pdf at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/ZarZaraat-PAC-Agri-Connections_2025_Information_Required.xlsx at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/02/Investing-in-Agriculture-for-Growth.pdf at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/2020-21-AUDITED-FINANCIAL-STATEMENT.pdf at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY22AuditFinancialStatements.pdf at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY24AuditedFinancialStatements.pdf at depth 2
+2025-07-17 22:59:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY23AuditedFinancialStatement.pdf at depth 2
+2025-07-17 22:59:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/agriculture-can-wipe-out-trade-deficit-pac-agri-investment-conference-told at depth 3
+2025-07-17 22:59:44 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-leadership-participates-in-adb-demonstrations-to-promote-mechanized-harvesting-of-rice-and-maize at depth 3
+2025-07-17 22:59:44 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/building-momentum-for-a-major-upgrade-of-crop-insurance-for-pakistans-farmers at depth 3
+2025-07-17 22:59:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture at depth 3
+2025-07-17 22:59:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=4 at depth 3
+2025-07-17 22:59:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-2 at depth 3
+2025-07-17 22:59:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-partners-with-engro-to-conduct-agriculture-webinar-series at depth 3
+2025-07-17 22:59:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/area-yield-index-insurance-scheme-proposed-by-pac-leads-to-heat-wave-payout at depth 3
+2025-07-17 22:59:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-conducts-training-of-trainers-from-cameroon-on-precision-land-leveling-ploughing-and-mechanized-paddy-cultivation at depth 3
+2025-07-17 22:59:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-3 at depth 3
+2025-07-17 22:59:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=5 at depth 3
+2025-07-17 22:59:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 64 pages crawled
+2025-07-17 22:59:47 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://pac.com.pk/
+2025-07-17 22:59:49 - scraper - INFO - media:extract_media_urls:126 - Extracted 570 media items from https://pac.com.pk/
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\crops\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to crops domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\crops\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to crops domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\banking\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to banking domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\banking\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to banking domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\marketplace\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to marketplace domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\marketplace\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to marketplace domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\farm\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to farm domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\farm\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to farm domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\agriculture\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to agriculture domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\agriculture\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to agriculture domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\water\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to water domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\water\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to water domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\weather\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to weather domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\weather\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to weather domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_document:84 - Saved document to docs\chat\document_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:216 - Saved document to chat domain with ID: document_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - media:create_media_catalog:401 - Creating media catalog
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:save_media_catalog:118 - Saved media catalog to docs\chat\https___pac_com_pk__media_20250717_230000.md
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_single_url:224 - Saved media catalog to chat domain with ID: https___pac_com_pk__media_20250717_230000
+2025-07-17 23:00:00 - scraper - INFO - component_factory:update_progress:123 - Progress: 1/1 (100.0%) - Processed https://pac.com.pk/ - Success
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 1
+- Completed: 1 (100.0%)
+- Errors: 0
+- Elapsed Time: 75.30 seconds
+- Processing Rate: 0.01 URLs/second
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 23:00:00 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 23:00:00 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 23:00:00 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 23:00:00 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 23:00:00 - scraper - INFO - dev_storage:cleanup:40 - Cleaning up development storage manager
+2025-07-17 23:00:00 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 23:00:00 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 23:01:12 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 23:01:12 - scraper - INFO - __main__:main:61 - Running in DEV mode
+2025-07-17 23:01:12 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 23:01:12 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 23:01:12 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 23:01:12 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 23:01:12 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 23:01:12 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 23:01:12 - scraper - INFO - dev_storage:initialize:34 - Initializing development storage manager
+2025-07-17 23:01:12 - scraper - INFO - dev_storage:create_domain_structure:123 - Creating domain folder structure
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in dev mode
+2025-07-17 23:01:12 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 23:01:12 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 1 URLs
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 23:01:12 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 23:01:12 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 23:01:12 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 23:01:57 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 23:01:57 - scraper - INFO - __main__:main:61 - Running in PROD mode
+2025-07-17 23:01:57 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 23:01:57 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 23:01:57 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 23:01:57 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 23:01:57 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 23:01:57 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 23:01:57 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 23:01:57 - scraper - INFO - prod_storage:initialize:47 - Initializing production storage manager
+2025-07-17 23:01:57 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:01:57 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:01:57 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:01:57 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:01:57 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:01:58 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:01:58 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 23:01:58 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in prod mode
+2025-07-17 23:01:58 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 23:01:58 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 23:01:58 - scraper - INFO - component_factory:start_monitoring:118 - Starting to process 1 URLs
+2025-07-17 23:01:58 - scraper - INFO - orchestrator:process_single_url:158 - Processing URL: https://pac.com.pk/
+2025-07-17 23:01:58 - scraper - INFO - orchestrator:process_single_url:171 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 23:01:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 23:01:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 23:02:30 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 23:02:39 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 23:02:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 23:02:41 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 23:02:41 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 23:02:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 23:02:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 23:02:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 23:02:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 23:02:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 23:02:44 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 23:02:44 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 23:02:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 23:02:54 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-3.-The-Seed-of-Growth.pdf at depth 2
+2025-07-17 23:02:57 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled http://www.pac.com.pk at depth 2
+2025-07-17 23:02:57 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ac2025registration at depth 2
+2025-07-17 23:02:57 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-1.-Higher-Growth-Through-Technology.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/The-State-of-Pakistans-Agriculture-2024.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-2.-Water-for-Equitable-Growth.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-5.-Mitigating-Animal-Disease-to-Support-Growth.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/04/20240423-PAC-Call-to-Action.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2023/10/The-State-of-Pakistans-Agriculture.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/20240624-PAC-Introduction-CIRC.pdf.pdf at depth 2
+2025-07-17 23:02:58 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-4.-Financing-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/farm-mechanization at depth 2
+2025-07-17 23:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/our-team at depth 2
+2025-07-17 23:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/sustainable-and-traceable-cotton-cultivation at depth 2
+2025-07-17 23:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/formation-of-the-collateral-management-company-on-warehouse-receipts-based-financing-2 at depth 2
+2025-07-17 23:03:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/organized-financial-inclusion-for-farmers-crop-insurance-2 at depth 2
+2025-07-17 23:03:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=3 at depth 2
+2025-07-17 23:03:03 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=2 at depth 2
+2025-07-17 23:03:04 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=6 at depth 2
+2025-07-17 23:03:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-6.-Better-Feed-for-Higher-Livestock-Growth.pdf at depth 2
+2025-07-17 23:03:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/USAID-Private-Silo-Warehousing-for-Pakistans-Grains.pdf at depth 2
+2025-07-17 23:03:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/The-State-of-Pakistans-Agriculture-2024-1.pdf at depth 2
+2025-07-17 23:03:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/ZarZaraat-PAC-Agri-Connections_2025_Information_Required.xlsx at depth 2
+2025-07-17 23:03:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-7.-Open-sesame-How-CMEC-is-expanding-Pakistans-sesame-exports-to-China.pdf at depth 2
+2025-07-17 23:03:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-8.-Empowering-women-to-increase-dairy-productivity-FrieslandCampina-Engro.pdf at depth 2
+2025-07-17 23:03:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-6.-Developing-Pakistan_s-blue-agri-economy-AquaHatch-International-and-Dhabeji-Aqua-Foods.pdf at depth 2
+2025-07-17 23:03:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-9.-Protecting-the-livelihoods-of-Pakistans-farmers-TPL-Insurance-and-Crop-Insurance.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-5.-Bringing-the-corportae-sector-to-serve-the-farmer-HBL-Zarai.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-4.-How-KN_s-built-the-poultry-value-chain.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-2.-Producing-more-with-less-Fatima-Group-in-wheat-and-cotton.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-10.-Regenerative-agriculture-to-protect-Pakistans-soils-its-water-and-its-bio-diversity-Thal-Industries-and-its-Drawdown-Farm.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-3.-Re-defining-end-to-end-integration-PepsiCo-Lays-and-potatoes.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-Policy-Priorities-for-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-1.-Seed-to-table-National-Foods-and-tomatoes.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/02/Investing-in-Agriculture-for-Growth.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY24AuditedFinancialStatements.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY22AuditFinancialStatements.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/2020-21-AUDITED-FINANCIAL-STATEMENT.pdf at depth 2
+2025-07-17 23:03:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY23AuditedFinancialStatement.pdf at depth 2
+2025-07-17 23:03:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/agriculture-can-wipe-out-trade-deficit-pac-agri-investment-conference-told at depth 3
+2025-07-17 23:03:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/area-yield-index-insurance-scheme-proposed-by-pac-leads-to-heat-wave-payout at depth 3
+2025-07-17 23:03:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-leadership-participates-in-adb-demonstrations-to-promote-mechanized-harvesting-of-rice-and-maize at depth 3
+2025-07-17 23:03:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-2 at depth 3
+2025-07-17 23:03:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture at depth 3
+2025-07-17 23:03:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-partners-with-engro-to-conduct-agriculture-webinar-series at depth 3
+2025-07-17 23:03:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/building-momentum-for-a-major-upgrade-of-crop-insurance-for-pakistans-farmers at depth 3
+2025-07-17 23:03:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-3 at depth 3
+2025-07-17 23:03:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=5 at depth 3
+2025-07-17 23:03:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-conducts-training-of-trainers-from-cameroon-on-precision-land-leveling-ploughing-and-mechanized-paddy-cultivation at depth 3
+2025-07-17 23:03:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=4 at depth 3
+2025-07-17 23:03:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 64 pages crawled
+2025-07-17 23:03:26 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://pac.com.pk/
+2025-07-17 23:03:27 - scraper - INFO - media:extract_media_urls:126 - Extracted 570 media items from https://pac.com.pk/
+2025-07-17 23:03:39 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to crops domain (attempt 1)
+2025-07-17 23:03:41 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 6de5bea7-0fd1-40f4-81b4-b43cba52ce1b to crops
+2025-07-17 23:03:41 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to crops domain with ID: 6de5bea7-0fd1-40f4-81b4-b43cba52ce1b
+2025-07-17 23:03:41 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to banking domain (attempt 1)
+2025-07-17 23:03:42 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 2890bb63-008a-45c6-bdd1-9d9c930d63a6 to banking
+2025-07-17 23:03:42 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to banking domain with ID: 2890bb63-008a-45c6-bdd1-9d9c930d63a6
+2025-07-17 23:03:42 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to marketplace domain (attempt 1)
+2025-07-17 23:03:43 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 52f15f0b-d8ed-42a8-a7a3-dc5ee2b5faa3 to marketplace
+2025-07-17 23:03:43 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to marketplace domain with ID: 52f15f0b-d8ed-42a8-a7a3-dc5ee2b5faa3
+2025-07-17 23:03:43 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to farm domain (attempt 1)
+2025-07-17 23:03:44 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document b9146106-befb-4740-a97d-ba2bfbdd6ec7 to farm
+2025-07-17 23:03:44 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to farm domain with ID: b9146106-befb-4740-a97d-ba2bfbdd6ec7
+2025-07-17 23:03:44 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to agriculture domain (attempt 1)
+2025-07-17 23:03:44 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document fd18faa7-8299-4c05-9218-fa417478c80c to agriculture
+2025-07-17 23:03:44 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to agriculture domain with ID: fd18faa7-8299-4c05-9218-fa417478c80c
+2025-07-17 23:03:44 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to water domain (attempt 1)
+2025-07-17 23:03:45 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 58befb80-0176-4be8-9ee0-5a9df14b79e4 to water
+2025-07-17 23:03:45 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to water domain with ID: 58befb80-0176-4be8-9ee0-5a9df14b79e4
+2025-07-17 23:03:45 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to weather domain (attempt 1)
+2025-07-17 23:03:46 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 479b693e-f84c-4356-8840-2732b4ce49b6 to weather
+2025-07-17 23:03:46 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to weather domain with ID: 479b693e-f84c-4356-8840-2732b4ce49b6
+2025-07-17 23:03:46 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to chat domain (attempt 1)
+2025-07-17 23:03:47 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 88d0d837-9346-4368-81cf-69aa682d5cb9 to chat
+2025-07-17 23:03:47 - scraper - INFO - orchestrator:process_single_url:250 - Uploaded document to chat domain with ID: 88d0d837-9346-4368-81cf-69aa682d5cb9
+2025-07-17 23:03:47 - scraper - INFO - component_factory:update_progress:123 - Progress: 1/1 (100.0%) - Processed https://pac.com.pk/ - Success
+2025-07-17 23:03:47 - scraper - INFO - orchestrator:process_urls:135 - Processing report:
+Processing Report:
+- Total URLs: 1
+- Completed: 1 (100.0%)
+- Errors: 0
+- Elapsed Time: 108.48 seconds
+- Processing Rate: 0.01 URLs/second
+2025-07-17 23:03:47 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 23:03:47 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 23:03:47 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 23:03:47 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 23:03:47 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 23:03:47 - scraper - INFO - prod_storage:cleanup:53 - Cleaning up production storage manager
+2025-07-17 23:03:47 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:03:47 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:03:47 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 23:03:47 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful

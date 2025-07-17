@@ -2,7 +2,7 @@ scraper:
   mode: "dev"  # dev or prod
   max_workers: 10
   max_depth: 3
-  rate_limit: 1.0  # seconds between requests per domain
+  rate_limit: 0.01  # seconds between requests per domain
   timeout: 30
   
 crawl4ai:

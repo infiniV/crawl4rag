@@ -14,6 +14,7 @@ from dataclasses import dataclass
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 from crawl4ai.models import CrawlResult as Crawl4aiResult
+from crawl4ai.deep_crawling import BFSDeepCrawlStrategy, FilterChain, DomainFilter
 
 from scraper.core.base import (
     CrawlEngineInterface, 
@@ -57,6 +58,9 @@ class CrawlEngine(CrawlEngineInterface):
         self.browser_config: Optional[BrowserConfig] = None
         self.crawler_run_config: Optional[CrawlerRunConfig] = None
         
+        # Deep crawling configuration
+        self.max_depth = config.get('scraper', {}).get('max_depth', 3)
+        
         # Session management
         self.sessions: Dict[str, SessionInfo] = {}
         self.session_timeout = config.get('session_timeout', 3600)  # 1 hour
@@ -72,7 +76,8 @@ class CrawlEngine(CrawlEngineInterface):
             'total_crawled': 0,
             'successful_crawls': 0,
             'failed_crawls': 0,
-            'total_time': 0.0
+            'total_time': 0.0,
+            'deep_crawl_pages': 0
         }
 
     async def initialize(self) -> None:
@@ -172,6 +177,10 @@ class CrawlEngine(CrawlEngineInterface):
         """
         if not self._initialized:
             raise CrawlingError("Crawl engine not initialized")
+        
+        # Check if deep crawling is requested
+        if config.get('deep_crawl', False):
+            return await self.deep_crawl_url(url, config)
         
         start_time = time.time()
         domain = urlparse(url).netloc
@@ -375,6 +384,21 @@ class CrawlEngine(CrawlEngineInterface):
                 # Store cookies for later use with browser context
                 run_config_dict['shared_data'] = {'session_cookies': session_info.cookies}
         
+        # Add deep crawling configuration if specified
+        if config.get('deep_crawl', False):
+            domain = urlparse(config.get('url', '')).netloc
+            if domain:
+                filter_chain = FilterChain([
+                    DomainFilter(allowed_domains=[domain])
+                ])
+                
+                run_config_dict['deep_crawl_strategy'] = BFSDeepCrawlStrategy(
+                    max_depth=self.max_depth,
+                    include_external=False,
+                    filter_chain=filter_chain
+                )
+                run_config_dict['stream'] = True
+        
         # Override with any custom configuration
         custom_js = config.get('custom_js_code')
         if custom_js:
@@ -445,4 +469,141 @@ class CrawlEngine(CrawlEngineInterface):
                 metadata={},
                 success=False,
                 error_message=f"Result conversion failed: {e}"
+            )
+            
+    async def deep_crawl_url(self, url: str, config: Dict[str, Any]) -> CrawlResult:
+        """
+        Perform deep crawling of a URL with configurable depth
+        
+        Args:
+            url: Starting URL to crawl
+            config: Configuration options
+            
+        Returns:
+            CrawlResult with combined content from deep crawl
+        """
+        if not self._initialized:
+            raise CrawlingError("Crawl engine not initialized")
+        
+        start_time = time.time()
+        domain = urlparse(url).netloc
+        
+        self.logger.info(f"Starting deep crawl for {url} with max depth {self.max_depth}")
+        
+        try:
+            # Get session info if available
+            session_info = config.get('session_info')
+            
+            # Create a domain filter to stay within the same domain
+            filter_chain = FilterChain([
+                DomainFilter(allowed_domains=[domain])
+            ])
+            
+            # Prepare crawler configuration with deep crawl strategy
+            run_config_dict = {
+                'js_code': self.crawler_run_config.js_code,
+                'wait_for_images': self.crawler_run_config.wait_for_images,
+                'scan_full_page': self.crawler_run_config.scan_full_page,
+                'scroll_delay': self.crawler_run_config.scroll_delay,
+                'page_timeout': self.crawler_run_config.page_timeout,
+                'deep_crawl_strategy': BFSDeepCrawlStrategy(
+                    max_depth=self.max_depth,
+                    include_external=False,
+                    filter_chain=filter_chain
+                ),
+                'stream': True  # Use streaming for better memory management
+            }
+            
+            # Add session-specific configuration
+            if session_info and session_info.cookies:
+                run_config_dict['shared_data'] = {'session_cookies': session_info.cookies}
+            
+            # Override with any custom configuration
+            custom_js = config.get('custom_js_code')
+            if custom_js:
+                run_config_dict['js_code'] = custom_js
+            
+            if 'page_timeout' in config:
+                run_config_dict['page_timeout'] = config['page_timeout'] * 1000
+            
+            run_config = CrawlerRunConfig(**run_config_dict)
+            
+            # Perform the deep crawl
+            self.logger.info(f"Starting deep crawl with max depth {self.max_depth}")
+            
+            # Collect all results
+            all_results = []
+            all_links = set()
+            all_media = []
+            
+            # Use the crawler with streaming results
+            async with self.crawler as crawler:
+                async for result in await crawler.arun(url=url, config=run_config):
+                    # Convert each result
+                    result_url = result.url
+                    crawl_result = self._convert_result(result, result_url)
+                    
+                    if crawl_result.success:
+                        all_results.append(crawl_result)
+                        
+                        # Collect links
+                        all_links.update(crawl_result.links)
+                        
+                        # Collect media
+                        all_media.extend(crawl_result.media)
+                        
+                        # Get depth from metadata
+                        depth = result.metadata.get('depth', 0) if hasattr(result, 'metadata') else 0
+                        self.logger.info(f"Crawled {result_url} at depth {depth}")
+            
+            # Update statistics
+            self.stats['total_crawled'] += len(all_results)
+            self.stats['successful_crawls'] += len(all_results)
+            self.stats['deep_crawl_pages'] += len(all_results)
+            self.stats['total_time'] += time.time() - start_time
+            
+            # Create a combined result
+            combined_markdown = "\n\n".join([r.markdown for r in all_results if r.markdown])
+            combined_html = "\n\n".join([r.html for r in all_results if r.html])
+            
+            self.logger.info(f"Deep crawl completed: {len(all_results)} pages crawled")
+            
+            # Return the first result with combined data
+            if all_results:
+                main_result = all_results[0]
+                return CrawlResult(
+                    url=url,
+                    html=combined_html,
+                    markdown=combined_markdown,
+                    links=list(all_links),
+                    media=all_media,
+                    metadata={
+                        **main_result.metadata,
+                        'deep_crawl': True,
+                        'pages_crawled': len(all_results),
+                        'crawl_timestamp': time.time()
+                    },
+                    success=True,
+                    error_message=""
+                )
+            else:
+                raise CrawlingError("No successful results from deep crawl")
+            
+        except Exception as e:
+            self.stats['total_crawled'] += 1
+            self.stats['failed_crawls'] += 1
+            self.stats['total_time'] += time.time() - start_time
+            
+            error_msg = f"Failed to deep crawl {url}: {e}"
+            self.logger.error(error_msg)
+            
+            return CrawlResult(
+                url=url,
+                html="",
+                markdown="",
+                links=[],
+                media=[],
+                metadata={'deep_crawl': True, 'error': str(e)},
+                success=False,
+                error_message=error_msg
             )

@@ -60,6 +60,14 @@ async def main() -> int:
     mode = ProcessingMode.PRODUCTION if mode_str.lower() == 'prod' else ProcessingMode.DEVELOPMENT
     logger.info(f"Running in {mode_str.upper()} mode")
     
+    # Update the config with the mode from command line
+    config_manager.scraper_config.mode = mode_str.lower()
+    
+    # Update the config dictionary directly
+    if 'scraper' not in config:
+        config['scraper'] = {}
+    config['scraper']['mode'] = mode_str.lower()
+    
     # Validate configuration for selected mode
     try:
         config_manager.validate_config(mode_str)

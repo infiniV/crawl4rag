@@ -11,7 +11,8 @@ import json
 async def check_api_schema():
     """Check the RAG API OpenAPI schema to understand request format"""
     api_key = "ragnar_pzt3-FWkRbYxISfGVKqZnzpD_qDpZxxZLaTQGVdp_H4"
-    base_url = "http://217.154.66.145:8000"
+    # Use the VectorDB endpoint (port 8015)
+    base_url = "http://217.154.66.145:8015"
     
     timeout = aiohttp.ClientTimeout(total=10)
     headers = {'Authorization': f'Bearer {api_key}'}

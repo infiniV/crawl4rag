@@ -86,9 +86,13 @@ def create_and_register_components(orchestrator: ScraperOrchestrator, config: Di
     orchestrator.register_component("storage_manager", storage_manager)
     
     # Create RAG uploader only for production mode
+    print(f"Component factory mode: {mode}")
     if mode.lower() == 'prod':
+        print("Creating RAG uploader for production mode")
         rag_uploader = RAGUploader(config)
         orchestrator.register_component("rag_uploader", rag_uploader)
+    else:
+        print("Skipping RAG uploader creation for non-production mode")
     
     # Create progress monitor wrapper
     class ProgressMonitorWrapper(BaseComponent):

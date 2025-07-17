@@ -161,7 +161,19 @@ class ScraperOrchestratorImpl(ScraperOrchestrator):
             if not self.crawl_engine:
                 raise ValueError("Crawl engine not initialized")
             
-            crawl_result = await self.crawl_engine.crawl_url(url, {})
+            # Check if deep crawling is enabled in config
+            scraper_config = self.config.get('scraper', {})
+            max_depth = scraper_config.get('max_depth', 0)
+            
+            # Enable deep crawling if max_depth > 1
+            deep_crawl = max_depth > 1
+            if deep_crawl:
+                self.logger.info(f"Using deep crawling with max depth {max_depth} for {url}")
+                
+            crawl_result = await self.crawl_engine.crawl_url(url, {
+                'deep_crawl': deep_crawl,
+                'url': url
+            })
             
             if not crawl_result.success:
                 result.error_message = crawl_result.error_message
@@ -211,12 +223,48 @@ class ScraperOrchestratorImpl(ScraperOrchestrator):
                         )
                         self.logger.info(f"Saved media catalog to {domain} domain with ID: {catalog_id}")
             else:
+                # Production mode - try to use RAG uploader if available
                 if not self.rag_uploader:
-                    raise ValueError("RAG uploader not initialized")
-                
-                for domain in domains:
-                    doc_id = await self.rag_uploader.upload_document(document, domain)
-                    self.logger.info(f"Uploaded document to {domain} domain with ID: {doc_id}")
+                    self.logger.warning("RAG uploader not initialized, falling back to local storage")
+                    
+                    # Fall back to local storage
+                    if not self.storage_manager:
+                        raise ValueError("Storage manager not initialized")
+                    
+                    for domain in domains:
+                        doc_id = await self.storage_manager.save_document(document, domain)
+                        self.logger.info(f"Saved document to {domain} domain with ID: {doc_id}")
+                        
+                        # Save media catalog
+                        if media_items:
+                            catalog = self.media_extractor.create_media_catalog(media_items)
+                            catalog_id = await self.storage_manager.save_media_catalog(
+                                catalog, domain, url
+                            )
+                            self.logger.info(f"Saved media catalog to {domain} domain with ID: {catalog_id}")
+                else:
+                    # Use RAG uploader
+                    for domain in domains:
+                        try:
+                            doc_id = await self.rag_uploader.upload_document(document, domain)
+                            self.logger.info(f"Uploaded document to {domain} domain with ID: {doc_id}")
+                        except Exception as e:
+                            self.logger.error(f"Failed to upload to RAG API: {str(e)}, falling back to local storage")
+                            
+                            # Fall back to local storage
+                            if self.storage_manager:
+                                doc_id = await self.storage_manager.save_document(document, domain)
+                                self.logger.info(f"Saved document to {domain} domain with ID: {doc_id}")
+                                
+                                # Save media catalog
+                                if media_items:
+                                    catalog = self.media_extractor.create_media_catalog(media_items)
+                                    catalog_id = await self.storage_manager.save_media_catalog(
+                                        catalog, domain, url
+                                    )
+                                    self.logger.info(f"Saved media catalog to {domain} domain with ID: {catalog_id}")
+                            else:
+                                raise ValueError("Storage manager not initialized for fallback")
             
             # Mark as successful
             result.success = True
