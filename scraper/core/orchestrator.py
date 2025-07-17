@@ -109,15 +109,17 @@ class ScraperOrchestratorImpl(ScraperOrchestrator):
         
         # Process URLs
         results = []
+        total_pages_processed = 0
+        
         for i, url in enumerate(valid_urls):
             try:
                 result = await self.process_single_url(url, mode)
                 results.append(result)
                 
-                # Update progress
+                # Update progress with the total pages processed
                 if self.progress_monitor:
                     self.progress_monitor.update_progress(
-                        i + 1, 
+                        i + 1,  # Just update with the current URL index
                         f"Processed {url} - {'Success' if result.success else 'Failed'}"
                     )
             except Exception as e:
@@ -174,6 +176,16 @@ class ScraperOrchestratorImpl(ScraperOrchestrator):
                 'deep_crawl': deep_crawl,
                 'url': url
             })
+            
+            # Store the crawl result in the processing result for later reference
+            result.crawl_result = crawl_result
+            
+            # Update progress monitor with actual pages crawled for deep crawling
+            if deep_crawl and self.progress_monitor and hasattr(crawl_result, 'pages_crawled') and crawl_result.pages_crawled > 1:
+                # Update the total URLs to include deep crawled pages
+                additional_pages = crawl_result.pages_crawled - 1  # Subtract 1 because the main URL is already counted
+                self.progress_monitor.add_deep_crawled_pages(additional_pages)
+                self.logger.info(f"Added {additional_pages} deep crawled pages to progress monitoring")
             
             if not crawl_result.success:
                 result.error_message = crawl_result.error_message

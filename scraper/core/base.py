@@ -69,6 +69,7 @@ class ProcessingResult:
     processing_time: float = 0.0
     retry_count: int = 0
     status: ProcessingStatus = ProcessingStatus.NOT_STARTED
+    crawl_result: Optional['CrawlResult'] = None  # Store the crawl result for reference
 
 
 @dataclass
@@ -82,6 +83,7 @@ class CrawlResult:
     metadata: Dict[str, Any]
     success: bool
     error_message: Optional[str] = None
+    pages_crawled: int = 1  # Default to 1 for single page crawls
 
 
 class BaseComponent(ABC):
@@ -290,6 +292,11 @@ class ProgressMonitorInterface(BaseComponent):
     @abstractmethod
     def update_progress(self, completed: int, message: str = "") -> None:
         """Update progress"""
+        pass
+    
+    @abstractmethod
+    def add_deep_crawled_pages(self, pages: int) -> None:
+        """Add deep crawled pages to the total count"""
         pass
     
     @abstractmethod

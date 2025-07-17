@@ -584,7 +584,8 @@ class CrawlEngine(CrawlEngineInterface):
                         'crawl_timestamp': time.time()
                     },
                     success=True,
-                    error_message=""
+                    error_message="",
+                    pages_crawled=len(all_results)
                 )
             else:
                 raise CrawlingError("No successful results from deep crawl")
@@ -605,5 +606,6 @@ class CrawlEngine(CrawlEngineInterface):
                 media=[],
                 metadata={'deep_crawl': True, 'error': str(e)},
                 success=False,
-                error_message=error_msg
+                error_message=error_msg,
+                pages_crawled=1  # Default to 1 on error
             )

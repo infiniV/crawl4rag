@@ -563,3 +563,434 @@ Processing Report:
 2025-07-17 23:03:47 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
 2025-07-17 23:03:47 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
 2025-07-17 23:03:47 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 23:33:43 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 23:33:43 - scraper - INFO - __main__:main:61 - Running in PROD mode
+2025-07-17 23:33:43 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 23:33:43 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 23:33:43 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 23:33:43 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 23:33:43 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 23:33:43 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 23:33:43 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 23:33:43 - scraper - INFO - prod_storage:initialize:47 - Initializing production storage manager
+2025-07-17 23:33:43 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:33:43 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:33:43 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:33:44 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:33:45 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:33:45 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:33:45 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 23:33:45 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in prod mode
+2025-07-17 23:33:45 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 23:33:45 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 23:33:45 - scraper - INFO - component_factory:start_monitoring:120 - Starting to process 1 URLs
+2025-07-17 23:33:45 - scraper - INFO - orchestrator:process_single_url:159 - Processing URL: https://pac.com.pk/
+2025-07-17 23:33:45 - scraper - INFO - orchestrator:process_single_url:172 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 23:33:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 23:33:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 23:33:59 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 23:34:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 23:34:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 23:34:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 23:34:08 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 23:34:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 23:34:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 23:34:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 23:34:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 23:34:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 23:34:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 23:34:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 23:34:14 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 23:34:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-2.-Water-for-Equitable-Growth.pdf at depth 2
+2025-07-17 23:34:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/20240624-PAC-Introduction-CIRC.pdf.pdf at depth 2
+2025-07-17 23:34:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 23:34:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-4.-Financing-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-5.-Mitigating-Animal-Disease-to-Support-Growth.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/04/20240423-PAC-Call-to-Action.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2023/10/The-State-of-Pakistans-Agriculture.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-3.-The-Seed-of-Growth.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/The-State-of-Pakistans-Agriculture-2024.pdf at depth 2
+2025-07-17 23:34:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-1.-Higher-Growth-Through-Technology.pdf at depth 2
+2025-07-17 23:34:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ac2025registration at depth 2
+2025-07-17 23:34:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled http://www.pac.com.pk at depth 2
+2025-07-17 23:34:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/farm-mechanization at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/organized-financial-inclusion-for-farmers-crop-insurance-2 at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/formation-of-the-collateral-management-company-on-warehouse-receipts-based-financing-2 at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/our-team at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=3 at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/sustainable-and-traceable-cotton-cultivation at depth 2
+2025-07-17 23:34:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=6 at depth 2
+2025-07-17 23:34:27 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=2 at depth 2
+2025-07-17 23:34:31 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-6.-Better-Feed-for-Higher-Livestock-Growth.pdf at depth 2
+2025-07-17 23:34:32 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/02/Investing-in-Agriculture-for-Growth.pdf at depth 2
+2025-07-17 23:34:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/ZarZaraat-PAC-Agri-Connections_2025_Information_Required.xlsx at depth 2
+2025-07-17 23:34:33 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY22AuditFinancialStatements.pdf at depth 2
+2025-07-17 23:34:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY23AuditedFinancialStatement.pdf at depth 2
+2025-07-17 23:34:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/2020-21-AUDITED-FINANCIAL-STATEMENT.pdf at depth 2
+2025-07-17 23:34:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/USAID-Private-Silo-Warehousing-for-Pakistans-Grains.pdf at depth 2
+2025-07-17 23:34:34 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-5.-Bringing-the-corportae-sector-to-serve-the-farmer-HBL-Zarai.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-6.-Developing-Pakistan_s-blue-agri-economy-AquaHatch-International-and-Dhabeji-Aqua-Foods.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/The-State-of-Pakistans-Agriculture-2024-1.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-7.-Open-sesame-How-CMEC-is-expanding-Pakistans-sesame-exports-to-China.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-10.-Regenerative-agriculture-to-protect-Pakistans-soils-its-water-and-its-bio-diversity-Thal-Industries-and-its-Drawdown-Farm.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-9.-Protecting-the-livelihoods-of-Pakistans-farmers-TPL-Insurance-and-Crop-Insurance.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-8.-Empowering-women-to-increase-dairy-productivity-FrieslandCampina-Engro.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-4.-How-KN_s-built-the-poultry-value-chain.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-1.-Seed-to-table-National-Foods-and-tomatoes.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY24AuditedFinancialStatements.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-2.-Producing-more-with-less-Fatima-Group-in-wheat-and-cotton.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-3.-Re-defining-end-to-end-integration-PepsiCo-Lays-and-potatoes.pdf at depth 2
+2025-07-17 23:34:35 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-Policy-Priorities-for-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:34:41 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/agriculture-can-wipe-out-trade-deficit-pac-agri-investment-conference-told at depth 3
+2025-07-17 23:34:44 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-leadership-participates-in-adb-demonstrations-to-promote-mechanized-harvesting-of-rice-and-maize at depth 3
+2025-07-17 23:34:45 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/building-momentum-for-a-major-upgrade-of-crop-insurance-for-pakistans-farmers at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-conducts-training-of-trainers-from-cameroon-on-precision-land-leveling-ploughing-and-mechanized-paddy-cultivation at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-2 at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/area-yield-index-insurance-scheme-proposed-by-pac-leads-to-heat-wave-payout at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-3 at depth 3
+2025-07-17 23:34:46 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-partners-with-engro-to-conduct-agriculture-webinar-series at depth 3
+2025-07-17 23:34:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=4 at depth 3
+2025-07-17 23:34:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=5 at depth 3
+2025-07-17 23:34:47 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 64 pages crawled
+2025-07-17 23:34:47 - scraper - INFO - component_factory:add_deep_crawled_pages:137 - Added 63 deep crawled pages, total pages now: 64
+2025-07-17 23:34:47 - scraper - INFO - orchestrator:process_single_url:187 - Added 63 deep crawled pages to progress monitoring
+2025-07-17 23:34:47 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://pac.com.pk/
+2025-07-17 23:34:48 - scraper - INFO - media:extract_media_urls:126 - Extracted 570 media items from https://pac.com.pk/
+2025-07-17 23:34:59 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to crops domain (attempt 1)
+2025-07-17 23:35:01 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 8e88f4ac-c15c-47b5-aa5f-24a45407f21d to crops
+2025-07-17 23:35:01 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to crops domain with ID: 8e88f4ac-c15c-47b5-aa5f-24a45407f21d
+2025-07-17 23:35:01 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to banking domain (attempt 1)
+2025-07-17 23:35:02 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document dc113916-12e4-4573-a5ea-1564cdaaded6 to banking
+2025-07-17 23:35:02 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to banking domain with ID: dc113916-12e4-4573-a5ea-1564cdaaded6
+2025-07-17 23:35:02 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to marketplace domain (attempt 1)
+2025-07-17 23:35:02 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 6aa827e9-2c71-491a-9613-6b70e8e45ccf to marketplace
+2025-07-17 23:35:02 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to marketplace domain with ID: 6aa827e9-2c71-491a-9613-6b70e8e45ccf
+2025-07-17 23:35:02 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to farm domain (attempt 1)
+2025-07-17 23:35:03 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document e365a852-4641-46fd-a48f-f73e8edfb602 to farm
+2025-07-17 23:35:03 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to farm domain with ID: e365a852-4641-46fd-a48f-f73e8edfb602
+2025-07-17 23:35:03 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to agriculture domain (attempt 1)
+2025-07-17 23:35:04 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 8fb91df0-f608-420e-84f6-617ad5fdc76e to agriculture
+2025-07-17 23:35:04 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to agriculture domain with ID: 8fb91df0-f608-420e-84f6-617ad5fdc76e
+2025-07-17 23:35:04 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to water domain (attempt 1)
+2025-07-17 23:35:04 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document c9671f0f-9d43-49f2-abad-8b599090b228 to water
+2025-07-17 23:35:04 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to water domain with ID: c9671f0f-9d43-49f2-abad-8b599090b228
+2025-07-17 23:35:04 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to weather domain (attempt 1)
+2025-07-17 23:35:05 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 1d4bc791-939a-4741-ba28-aab206fb247b to weather
+2025-07-17 23:35:05 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to weather domain with ID: 1d4bc791-939a-4741-ba28-aab206fb247b
+2025-07-17 23:35:05 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to chat domain (attempt 1)
+2025-07-17 23:35:07 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 45e3e580-b148-4906-b343-08aa0e58dd61 to chat
+2025-07-17 23:35:07 - scraper - INFO - orchestrator:process_single_url:261 - Uploaded document to chat domain with ID: 45e3e580-b148-4906-b343-08aa0e58dd61
+2025-07-17 23:35:07 - scraper - INFO - component_factory:update_progress:132 - Progress: 1/64 (1.6%) - Processed https://pac.com.pk/ - Success
+2025-07-17 23:35:07 - scraper - INFO - orchestrator:process_urls:136 - Processing report:
+Processing Report:
+- Total URLs: 64 (1 initial + 63 deep crawled)
+- Completed: 1 (1.6%)
+- Errors: 0
+- Elapsed Time: 81.94 seconds
+- Processing Rate: 0.01 URLs/second
+2025-07-17 23:35:07 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 23:35:07 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 23:35:07 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 23:35:07 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 23:35:07 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 23:35:07 - scraper - INFO - prod_storage:cleanup:53 - Cleaning up production storage manager
+2025-07-17 23:35:07 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:35:07 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:35:07 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 23:35:07 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 23:44:28 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 23:44:28 - scraper - INFO - __main__:main:61 - Running in PROD mode
+2025-07-17 23:44:28 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 23:44:28 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 23:44:28 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 23:44:28 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 23:44:28 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 23:44:28 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 23:44:28 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 23:44:28 - scraper - INFO - prod_storage:initialize:47 - Initializing production storage manager
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:44:28 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:44:29 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:44:29 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:44:29 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:44:29 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:44:29 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 23:44:29 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in prod mode
+2025-07-17 23:44:29 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 23:44:29 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 23:44:29 - scraper - INFO - component_factory:start_monitoring:120 - Starting to process 1 URLs
+2025-07-17 23:44:29 - scraper - INFO - orchestrator:process_single_url:160 - Processing URL: https://pac.com.pk/
+2025-07-17 23:44:29 - scraper - INFO - orchestrator:process_single_url:173 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 23:44:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 23:44:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 23:44:42 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 23:44:50 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 23:44:51 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 23:44:52 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 23:44:52 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 23:44:52 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 23:44:52 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 23:44:52 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 23:44:53 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 23:44:53 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 23:44:54 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 23:44:54 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 23:44:57 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 23:45:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-4.-Financing-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:45:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-5.-Mitigating-Animal-Disease-to-Support-Growth.pdf at depth 2
+2025-07-17 23:45:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 23:45:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-1.-Higher-Growth-Through-Technology.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-6.-Better-Feed-for-Higher-Livestock-Growth.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-2.-Water-for-Equitable-Growth.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/04/20240423-PAC-Call-to-Action.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/20240624-PAC-Introduction-CIRC.pdf.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2023/10/The-State-of-Pakistans-Agriculture.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-3.-The-Seed-of-Growth.pdf at depth 2
+2025-07-17 23:45:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/The-State-of-Pakistans-Agriculture-2024.pdf at depth 2
+2025-07-17 23:45:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ac2025registration at depth 2
+2025-07-17 23:45:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/farm-mechanization at depth 2
+2025-07-17 23:45:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/organized-financial-inclusion-for-farmers-crop-insurance-2 at depth 2
+2025-07-17 23:45:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/our-team at depth 2
+2025-07-17 23:45:09 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/formation-of-the-collateral-management-company-on-warehouse-receipts-based-financing-2 at depth 2
+2025-07-17 23:45:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/sustainable-and-traceable-cotton-cultivation at depth 2
+2025-07-17 23:45:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=6 at depth 2
+2025-07-17 23:45:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=2 at depth 2
+2025-07-17 23:45:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=3 at depth 2
+2025-07-17 23:45:11 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-Policy-Priorities-for-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/The-State-of-Pakistans-Agriculture-2024-1.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-2.-Producing-more-with-less-Fatima-Group-in-wheat-and-cotton.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-8.-Empowering-women-to-increase-dairy-productivity-FrieslandCampina-Engro.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-4.-How-KN_s-built-the-poultry-value-chain.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-5.-Bringing-the-corportae-sector-to-serve-the-farmer-HBL-Zarai.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-3.-Re-defining-end-to-end-integration-PepsiCo-Lays-and-potatoes.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-6.-Developing-Pakistan_s-blue-agri-economy-AquaHatch-International-and-Dhabeji-Aqua-Foods.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-9.-Protecting-the-livelihoods-of-Pakistans-farmers-TPL-Insurance-and-Crop-Insurance.pdf at depth 2
+2025-07-17 23:45:13 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-1.-Seed-to-table-National-Foods-and-tomatoes.pdf at depth 2
+2025-07-17 23:45:14 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-7.-Open-sesame-How-CMEC-is-expanding-Pakistans-sesame-exports-to-China.pdf at depth 2
+2025-07-17 23:45:14 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-10.-Regenerative-agriculture-to-protect-Pakistans-soils-its-water-and-its-bio-diversity-Thal-Industries-and-its-Drawdown-Farm.pdf at depth 2
+2025-07-17 23:45:14 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/ZarZaraat-PAC-Agri-Connections_2025_Information_Required.xlsx at depth 2
+2025-07-17 23:45:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/2020-21-AUDITED-FINANCIAL-STATEMENT.pdf at depth 2
+2025-07-17 23:45:15 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/02/Investing-in-Agriculture-for-Growth.pdf at depth 2
+2025-07-17 23:45:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/USAID-Private-Silo-Warehousing-for-Pakistans-Grains.pdf at depth 2
+2025-07-17 23:45:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY23AuditedFinancialStatement.pdf at depth 2
+2025-07-17 23:45:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY22AuditFinancialStatements.pdf at depth 2
+2025-07-17 23:45:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY24AuditedFinancialStatements.pdf at depth 2
+2025-07-17 23:45:23 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/agriculture-can-wipe-out-trade-deficit-pac-agri-investment-conference-told at depth 3
+2025-07-17 23:45:27 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/area-yield-index-insurance-scheme-proposed-by-pac-leads-to-heat-wave-payout at depth 3
+2025-07-17 23:45:27 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-leadership-participates-in-adb-demonstrations-to-promote-mechanized-harvesting-of-rice-and-maize at depth 3
+2025-07-17 23:45:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-2 at depth 3
+2025-07-17 23:45:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=4 at depth 3
+2025-07-17 23:45:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/building-momentum-for-a-major-upgrade-of-crop-insurance-for-pakistans-farmers at depth 3
+2025-07-17 23:45:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-partners-with-engro-to-conduct-agriculture-webinar-series at depth 3
+2025-07-17 23:45:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture at depth 3
+2025-07-17 23:45:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-3 at depth 3
+2025-07-17 23:45:30 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=5 at depth 3
+2025-07-17 23:45:30 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-conducts-training-of-trainers-from-cameroon-on-precision-land-leveling-ploughing-and-mechanized-paddy-cultivation at depth 3
+2025-07-17 23:45:30 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 63 pages crawled
+2025-07-17 23:45:30 - scraper - INFO - component_factory:add_deep_crawled_pages:138 - Added 62 deep crawled pages, total pages now: 63
+2025-07-17 23:45:30 - scraper - INFO - orchestrator:process_single_url:188 - Added 62 deep crawled pages to progress monitoring
+2025-07-17 23:45:30 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://pac.com.pk/
+2025-07-17 23:45:31 - scraper - INFO - media:extract_media_urls:126 - Extracted 523 media items from https://pac.com.pk/
+2025-07-17 23:45:41 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to banking domain (attempt 1)
+2025-07-17 23:45:42 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 7e093d69-0b2c-4eb5-9f98-9ba5765c0038 to banking
+2025-07-17 23:45:42 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to banking domain with ID: 7e093d69-0b2c-4eb5-9f98-9ba5765c0038
+2025-07-17 23:45:42 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to crops domain (attempt 1)
+2025-07-17 23:45:43 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 672e23d6-877f-45e7-ad4a-2561ceb311f6 to crops
+2025-07-17 23:45:43 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to crops domain with ID: 672e23d6-877f-45e7-ad4a-2561ceb311f6
+2025-07-17 23:45:43 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to marketplace domain (attempt 1)
+2025-07-17 23:45:44 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 0293b54f-c9fe-4823-9418-fb013044ea9f to marketplace
+2025-07-17 23:45:44 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to marketplace domain with ID: 0293b54f-c9fe-4823-9418-fb013044ea9f
+2025-07-17 23:45:44 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to farm domain (attempt 1)
+2025-07-17 23:45:44 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 6698753e-a57f-4339-8e43-15642cea87eb to farm
+2025-07-17 23:45:44 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to farm domain with ID: 6698753e-a57f-4339-8e43-15642cea87eb
+2025-07-17 23:45:44 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to agriculture domain (attempt 1)
+2025-07-17 23:45:45 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 221df745-72c1-49f9-8ced-c21ed5255158 to agriculture
+2025-07-17 23:45:45 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to agriculture domain with ID: 221df745-72c1-49f9-8ced-c21ed5255158
+2025-07-17 23:45:45 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to water domain (attempt 1)
+2025-07-17 23:45:45 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document c588bca6-5d2d-4a34-8eee-78bc696271db to water
+2025-07-17 23:45:45 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to water domain with ID: c588bca6-5d2d-4a34-8eee-78bc696271db
+2025-07-17 23:45:45 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to weather domain (attempt 1)
+2025-07-17 23:45:46 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document f5654c7f-bb08-4913-8a45-2766140341af to weather
+2025-07-17 23:45:46 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to weather domain with ID: f5654c7f-bb08-4913-8a45-2766140341af
+2025-07-17 23:45:46 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to chat domain (attempt 1)
+2025-07-17 23:45:46 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 6a4c09b1-130b-408b-8058-f21ea6d98ef4 to chat
+2025-07-17 23:45:46 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to chat domain with ID: 6a4c09b1-130b-408b-8058-f21ea6d98ef4
+2025-07-17 23:45:46 - scraper - INFO - component_factory:update_progress:133 - Progress: 1/63 (1.6%) - Processed https://pac.com.pk/ - Success
+2025-07-17 23:45:46 - scraper - INFO - orchestrator:process_urls:137 - Processing report:
+Processing Report:
+- Total URLs: 63 (1 initial + 62 deep crawled)
+- Completed: 1 (1.6%)
+- Errors: 0
+- Elapsed Time: 77.13 seconds
+- Processing Rate: 0.01 URLs/second
+2025-07-17 23:45:46 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 23:45:46 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 23:45:46 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 23:45:46 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 23:45:46 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 23:45:46 - scraper - INFO - prod_storage:cleanup:53 - Cleaning up production storage manager
+2025-07-17 23:45:46 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:45:46 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:45:46 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 23:45:46 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful
+2025-07-17 23:48:21 - scraper - INFO - logging:setup_logging:79 - Logging system initialized
+2025-07-17 23:48:21 - scraper - INFO - __main__:main:61 - Running in PROD mode
+2025-07-17 23:48:21 - scraper - INFO - __main__:main:86 - Processing 1 URLs
+2025-07-17 23:48:21 - scraper - INFO - orchestrator:initialize:40 - Initializing scraper orchestrator
+2025-07-17 23:48:21 - scraper.core.url_manager - INFO - url_manager:initialize:152 - URL Manager initialized successfully
+2025-07-17 23:48:21 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:86 - Initializing crawl4ai engine...
+2025-07-17 23:48:21 - scraper.core.crawl_engine - INFO - crawl_engine:initialize:142 - Crawl engine initialized with max_concurrent=10
+2025-07-17 23:48:21 - scraper - INFO - content:initialize:64 - Initializing content processor
+2025-07-17 23:48:21 - scraper - INFO - media:initialize:59 - Initializing media extractor
+2025-07-17 23:48:21 - scraper - INFO - prod_storage:initialize:47 - Initializing production storage manager
+2025-07-17 23:48:21 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:48:21 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:48:21 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:48:21 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:48:21 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:initialize:89 - Initializing RAG API uploader
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:initialize:110 - Using API key: ragnar_pzt...
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:_test_api_connectivity:162 - Testing API connectivity at http://217.154.66.145:8000/health
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:_test_api_connectivity:167 - Health check successful: healthy
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:_test_api_connectivity:171 - Testing authentication at http://217.154.66.145:8000/auth/me
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:_test_api_connectivity:176 - Authentication successful for key: user_main
+2025-07-17 23:48:22 - scraper - INFO - rag_uploader:initialize:131 - RAG API uploader initialized successfully
+2025-07-17 23:48:22 - scraper - INFO - orchestrator:initialize:59 - Scraper orchestrator initialized
+2025-07-17 23:48:22 - scraper - INFO - orchestrator:process_urls:97 - Processing 1 URLs in prod mode
+2025-07-17 23:48:22 - scraper.core.url_manager - INFO - url_manager:validate_urls:184 - Validated 1 out of 1 URLs
+2025-07-17 23:48:22 - scraper - INFO - orchestrator:process_urls:102 - Validated 1/1 URLs
+2025-07-17 23:48:22 - scraper - INFO - component_factory:start_monitoring:120 - Starting to process 1 URLs
+2025-07-17 23:48:22 - scraper - INFO - orchestrator:process_single_url:160 - Processing URL: https://pac.com.pk/
+2025-07-17 23:48:22 - scraper - INFO - orchestrator:process_single_url:173 - Using deep crawling with max depth 3 for https://pac.com.pk/
+2025-07-17 23:48:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:491 - Starting deep crawl for https://pac.com.pk/ with max depth 3
+2025-07-17 23:48:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:532 - Starting deep crawl with max depth 3
+2025-07-17 23:48:54 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ at depth 0
+2025-07-17 23:49:02 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/electronic-warehouse-receipts-program-included-in-wheat-package-for-punjab at depth 1
+2025-07-17 23:49:04 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pacs-agri-connections-forum-set-to-drive-sector-growth at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/zarzaraat at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-board-member-speaks-to-business-recorder-about-credit-guarantees at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/knowledge-products at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023 at depth 1
+2025-07-17 23:49:05 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/contact at depth 1
+2025-07-17 23:49:06 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/about-us at depth 1
+2025-07-17 23:49:07 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024-2 at depth 1
+2025-07-17 23:49:10 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2024 at depth 1
+2025-07-17 23:49:16 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2023/10/The-State-of-Pakistans-Agriculture.pdf at depth 2
+2025-07-17 23:49:16 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/04/20240423-PAC-Call-to-Action.pdf at depth 2
+2025-07-17 23:49:16 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/20240624-PAC-Introduction-CIRC.pdf.pdf at depth 2
+2025-07-17 23:49:17 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2024/09/The-State-of-Pakistans-Agriculture-2024.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-2.-Water-for-Equitable-Growth.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/Area-Yield-Index-Insurance_-Pakistan-Agricultual-Coalitions-climate-resilience-solution-for-Pakistans-smallholder-farmers.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-1.-Higher-Growth-Through-Technology.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-4.-Financing-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-5.-Mitigating-Animal-Disease-to-Support-Growth.pdf at depth 2
+2025-07-17 23:49:18 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-3.-The-Seed-of-Growth.pdf at depth 2
+2025-07-17 23:49:20 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/farm-mechanization at depth 2
+2025-07-17 23:49:20 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/ac2025registration at depth 2
+2025-07-17 23:49:20 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/sustainable-and-traceable-cotton-cultivation at depth 2
+2025-07-17 23:49:20 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/formation-of-the-collateral-management-company-on-warehouse-receipts-based-financing-2 at depth 2
+2025-07-17 23:49:20 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/our-team at depth 2
+2025-07-17 23:49:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/organized-financial-inclusion-for-farmers-crop-insurance-2 at depth 2
+2025-07-17 23:49:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-6.-Better-Feed-for-Higher-Livestock-Growth.pdf at depth 2
+2025-07-17 23:49:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=6 at depth 2
+2025-07-17 23:49:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=2 at depth 2
+2025-07-17 23:49:21 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=3 at depth 2
+2025-07-17 23:49:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled http://www.pac.com.pk at depth 2
+2025-07-17 23:49:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-10.-Regenerative-agriculture-to-protect-Pakistans-soils-its-water-and-its-bio-diversity-Thal-Industries-and-its-Drawdown-Farm.pdf at depth 2
+2025-07-17 23:49:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_23-Policy-Priorities-for-Growth-in-Agriculture.pdf at depth 2
+2025-07-17 23:49:22 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-1.-Seed-to-table-National-Foods-and-tomatoes.pdf at depth 2
+2025-07-17 23:49:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-7.-Open-sesame-How-CMEC-is-expanding-Pakistans-sesame-exports-to-China.pdf at depth 2
+2025-07-17 23:49:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-5.-Bringing-the-corportae-sector-to-serve-the-farmer-HBL-Zarai.pdf at depth 2
+2025-07-17 23:49:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-6.-Developing-Pakistan_s-blue-agri-economy-AquaHatch-International-and-Dhabeji-Aqua-Foods.pdf at depth 2
+2025-07-17 23:49:24 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-4.-How-KN_s-built-the-poultry-value-chain.pdf at depth 2
+2025-07-17 23:49:25 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-2.-Producing-more-with-less-Fatima-Group-in-wheat-and-cotton.pdf at depth 2
+2025-07-17 23:49:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-3.-Re-defining-end-to-end-integration-PepsiCo-Lays-and-potatoes.pdf at depth 2
+2025-07-17 23:49:26 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-9.-Protecting-the-livelihoods-of-Pakistans-farmers-TPL-Insurance-and-Crop-Insurance.pdf at depth 2
+2025-07-17 23:49:27 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/SOPAR_24-8.-Empowering-women-to-increase-dairy-productivity-FrieslandCampina-Engro.pdf at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/ZarZaraat-PAC-Agri-Connections_2025_Information_Required.xlsx at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/02/Investing-in-Agriculture-for-Growth.pdf at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY22AuditFinancialStatements.pdf at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/2020-21-AUDITED-FINANCIAL-STATEMENT.pdf at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/USAID-Private-Silo-Warehousing-for-Pakistans-Grains.pdf at depth 2
+2025-07-17 23:49:28 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/01/The-State-of-Pakistans-Agriculture-2024-1.pdf at depth 2
+2025-07-17 23:49:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY24AuditedFinancialStatements.pdf at depth 2
+2025-07-17 23:49:29 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/wp-content/uploads/2025/05/PAC_FY23AuditedFinancialStatement.pdf at depth 2
+2025-07-17 23:49:39 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-leadership-participates-in-adb-demonstrations-to-promote-mechanized-harvesting-of-rice-and-maize at depth 3
+2025-07-17 23:49:39 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/building-momentum-for-a-major-upgrade-of-crop-insurance-for-pakistans-farmers at depth 3
+2025-07-17 23:49:39 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-2 at depth 3
+2025-07-17 23:49:39 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/agriculture-can-wipe-out-trade-deficit-pac-agri-investment-conference-told at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/area-yield-index-insurance-scheme-proposed-by-pac-leads-to-heat-wave-payout at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-partners-with-engro-to-conduct-agriculture-webinar-series at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-agri-connections-2023-transforming-pakistan-agriculture-3 at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=5 at depth 3
+2025-07-17 23:49:40 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/pac-conducts-training-of-trainers-from-cameroon-on-precision-land-leveling-ploughing-and-mechanized-paddy-cultivation at depth 3
+2025-07-17 23:49:41 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:557 - Crawled https://pac.com.pk/news?ekit-blog-posts-paged=4 at depth 3
+2025-07-17 23:49:41 - scraper.core.crawl_engine - INFO - crawl_engine:deep_crawl_url:569 - Deep crawl completed: 64 pages crawled
+2025-07-17 23:49:41 - scraper - INFO - component_factory:add_deep_crawled_pages:143 - Added 63 deep crawled pages, total pages now: 64
+2025-07-17 23:49:41 - scraper - INFO - orchestrator:process_single_url:188 - Added 63 deep crawled pages to progress monitoring
+2025-07-17 23:49:41 - scraper - INFO - media:extract_media_urls:94 - Extracting media URLs from https://pac.com.pk/
+2025-07-17 23:49:42 - scraper - INFO - media:extract_media_urls:126 - Extracted 570 media items from https://pac.com.pk/
+2025-07-17 23:49:54 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to crops domain (attempt 1)
+2025-07-17 23:49:55 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 48051dbe-b03b-44d7-b0b7-79a0b0c2483c to crops
+2025-07-17 23:49:55 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to crops domain with ID: 48051dbe-b03b-44d7-b0b7-79a0b0c2483c
+2025-07-17 23:49:55 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to banking domain (attempt 1)
+2025-07-17 23:49:56 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 9e7254b3-80e9-4762-8330-196c7787e0d2 to banking
+2025-07-17 23:49:56 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to banking domain with ID: 9e7254b3-80e9-4762-8330-196c7787e0d2
+2025-07-17 23:49:56 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to marketplace domain (attempt 1)
+2025-07-17 23:49:56 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document b860d332-09e7-4f49-bfcd-6987ec59c398 to marketplace
+2025-07-17 23:49:56 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to marketplace domain with ID: b860d332-09e7-4f49-bfcd-6987ec59c398
+2025-07-17 23:49:56 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to farm domain (attempt 1)
+2025-07-17 23:49:57 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 1dc7e810-049a-4bef-9a73-5c9f294534ea to farm
+2025-07-17 23:49:57 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to farm domain with ID: 1dc7e810-049a-4bef-9a73-5c9f294534ea
+2025-07-17 23:49:57 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to agriculture domain (attempt 1)
+2025-07-17 23:49:57 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 03af75b0-e580-470d-bb0e-9aa5683b21c3 to agriculture
+2025-07-17 23:49:57 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to agriculture domain with ID: 03af75b0-e580-470d-bb0e-9aa5683b21c3
+2025-07-17 23:49:57 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to water domain (attempt 1)
+2025-07-17 23:49:58 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document aaef4536-a6b6-4a18-a682-077e8071533e to water
+2025-07-17 23:49:58 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to water domain with ID: aaef4536-a6b6-4a18-a682-077e8071533e
+2025-07-17 23:49:58 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to weather domain (attempt 1)
+2025-07-17 23:49:58 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 97a0f656-7b80-47c2-bc68-a05743420e70 to weather
+2025-07-17 23:49:58 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to weather domain with ID: 97a0f656-7b80-47c2-bc68-a05743420e70
+2025-07-17 23:49:58 - scraper - INFO - rag_uploader:upload_document:250 - Uploading document to chat domain (attempt 1)
+2025-07-17 23:49:59 - scraper - INFO - rag_uploader:upload_document:263 - Successfully uploaded document 31fadd0c-3e05-44cb-b715-52f899ea0676 to chat
+2025-07-17 23:49:59 - scraper - INFO - orchestrator:process_single_url:262 - Uploaded document to chat domain with ID: 31fadd0c-3e05-44cb-b715-52f899ea0676
+2025-07-17 23:49:59 - scraper - INFO - component_factory:update_progress:138 - Progress: 64/64 (100.0%) - Processed https://pac.com.pk/ - Success
+2025-07-17 23:49:59 - scraper - INFO - orchestrator:process_urls:137 - Processing report:
+Processing Report:
+- Total URLs: 64 (1 initial + 63 deep crawled)
+- Completed: 64 (100.0%)
+- Errors: 0
+- Elapsed Time: 96.63 seconds
+- Processing Rate: 0.66 URLs/second
+2025-07-17 23:49:59 - scraper - INFO - orchestrator:cleanup:63 - Cleaning up scraper orchestrator
+2025-07-17 23:49:59 - scraper.core.url_manager - INFO - url_manager:cleanup:159 - URL Manager cleaned up
+2025-07-17 23:49:59 - scraper.core.crawl_engine - INFO - crawl_engine:cleanup:162 - Crawl engine cleaned up successfully
+2025-07-17 23:49:59 - scraper - INFO - content:cleanup:69 - Cleaning up content processor
+2025-07-17 23:49:59 - scraper - INFO - media:cleanup:65 - Cleaning up media extractor
+2025-07-17 23:49:59 - scraper - INFO - prod_storage:cleanup:53 - Cleaning up production storage manager
+2025-07-17 23:49:59 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:49:59 - scraper - INFO - rag_uploader:cleanup:135 - Cleaning up RAG API uploader
+2025-07-17 23:49:59 - scraper - INFO - orchestrator:cleanup:81 - Scraper orchestrator cleanup completed
+2025-07-17 23:49:59 - scraper - INFO - __main__:main:125 - Processing completed: 1/1 URLs successful

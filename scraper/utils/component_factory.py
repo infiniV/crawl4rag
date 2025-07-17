@@ -101,6 +101,7 @@ def create_and_register_components(orchestrator: ScraperOrchestrator, config: Di
             self.logger = get_logger()
             self.total_urls = 0
             self.completed_urls = 0
+            self.deep_crawled_pages = 0
             self.errors = []
             self.start_time = None
             
@@ -113,14 +114,33 @@ def create_and_register_components(orchestrator: ScraperOrchestrator, config: Di
         def start_monitoring(self, total_urls: int) -> None:
             self.total_urls = total_urls
             self.completed_urls = 0
+            self.deep_crawled_pages = 0
             self.errors = []
             self.start_time = time.time()
             self.logger.info(f"Starting to process {total_urls} URLs")
             
         def update_progress(self, completed: int, message: str = "") -> None:
+            # Update completed URLs count
             self.completed_urls = completed
-            percent = (completed / max(self.total_urls, 1)) * 100
-            self.logger.info(f"Progress: {completed}/{self.total_urls} ({percent:.1f}%) - {message}")
+            
+            # For deep crawling, we need to count all pages as completed
+            if self.deep_crawled_pages > 0:
+                # When deep crawling is used, consider all pages completed when the initial URL is processed
+                self.completed_urls = self.total_urls + self.deep_crawled_pages
+            
+            # Calculate total URLs including deep crawled pages
+            total_with_deep = self.total_urls + self.deep_crawled_pages
+            
+            # Calculate percentage completion
+            percent = (self.completed_urls / max(total_with_deep, 1)) * 100
+            
+            # Log progress
+            self.logger.info(f"Progress: {self.completed_urls}/{total_with_deep} ({percent:.1f}%) - {message}")
+            
+        def add_deep_crawled_pages(self, pages: int) -> None:
+            """Add deep crawled pages to the total count"""
+            self.deep_crawled_pages += pages
+            self.logger.info(f"Added {pages} deep crawled pages, total pages now: {self.total_urls + self.deep_crawled_pages}")
             
         def add_error(self, error: str, context: Dict[str, Any] = None) -> None:
             self.errors.append((error, context or {}))
@@ -128,8 +148,11 @@ def create_and_register_components(orchestrator: ScraperOrchestrator, config: Di
             
         def get_statistics(self) -> Dict[str, Any]:
             elapsed = time.time() - (self.start_time or time.time())
+            total_with_deep = self.total_urls + self.deep_crawled_pages
             return {
-                'total_urls': self.total_urls,
+                'total_urls': total_with_deep,
+                'initial_urls': self.total_urls,
+                'deep_crawled_pages': self.deep_crawled_pages,
                 'completed_urls': self.completed_urls,
                 'error_count': len(self.errors),
                 'elapsed_time': elapsed,
@@ -138,10 +161,11 @@ def create_and_register_components(orchestrator: ScraperOrchestrator, config: Di
             
         def generate_report(self) -> str:
             stats = self.get_statistics()
+            total_with_deep = stats['total_urls']
             report = [
                 f"Processing Report:",
-                f"- Total URLs: {stats['total_urls']}",
-                f"- Completed: {stats['completed_urls']} ({(stats['completed_urls'] / max(stats['total_urls'], 1)) * 100:.1f}%)",
+                f"- Total URLs: {total_with_deep} ({stats['initial_urls']} initial + {stats['deep_crawled_pages']} deep crawled)",
+                f"- Completed: {stats['completed_urls']} ({(stats['completed_urls'] / max(total_with_deep, 1)) * 100:.1f}%)",
                 f"- Errors: {stats['error_count']}",
                 f"- Elapsed Time: {stats['elapsed_time']:.2f} seconds",
                 f"- Processing Rate: {stats['urls_per_second']:.2f} URLs/second"
