@@ -1,2 +1,6 @@
 .venv   
 .kiro
+.env
+docs
+files
+logs
