@@ -9,7 +9,7 @@ __pycache__/
 
 # Environment variables
 .env
-
+Rag_API.md
 # Generated content
 docs/agriculture/
 docs/water/
